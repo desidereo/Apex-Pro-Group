@@ -14,12 +14,19 @@ Since you plan to delete the old site, you must secure your data first.
 5. Click **Generate CSV**.
 6. **Save this file** to `Websites/G_Labs/Legacy_Backup/products.csv`.
 
-### B. Export Orders (WooCommerce)
-1. Go to **WooCommerce > Orders**.
-2. If you don't see an "Export" button, install the free plugin **"Advanced Order Export For WooCommerce"**.
-3. Export all orders to CSV.
+### B. Export Orders & TradingView Usernames (CRITICAL)
+Standard WooCommerce export often **hides** custom fields like "TradingView Username". You need a specific plugin to get this.
+
+1. **Install Plugin:** Go to Plugins > Add New > Search for **"Advanced Order Export For WooCommerce"** (free version). Install & Activate.
+2. **Configure Export:**
+   - Go to **WooCommerce > Export Orders**.
+   - In the **"Set up fields to export"** section (at the bottom):
+     - Look for the **"Custom Fields"** or **"Item Metadata"** tab on the right side.
+     - Find the field labeled `tradingview_id`, `username`, `checkout_field_1` (or whatever you named it on your form).
+     - **Drag that field** into the export list on the left.
+   - Ensure "Billing Email", "Billing Name", and "Order Items" are also in the list.
+3. **Export:** Click **"Export"** (CSV format).
 4. **Save this file** to `Websites/G_Labs/Legacy_Backup/orders.csv`.
-   * *This is critical for tax purposes and historical records.*
 
 ### C. Export Customers (WooCommerce)
 1. Go to **Users > All Users** (or use the Order Export plugin above).
@@ -34,7 +41,22 @@ Since you plan to delete the old site, you must secure your data first.
 
 ---
 
-## 2. Automating the Content Migration
+## 2. Extracting TradingView Usernames (New Script)
+
+I have created a special script called `extract_usernames.py` to help you find your users.
+
+**How to use it:**
+1. Ensure your detailed `orders.csv` (from Step 1B) is in the `Legacy_Backup` folder.
+2. Run the script: `python extract_usernames.py`
+3. The script will show you the column names it found.
+4. **Type the number** of the column that contains the TradingView ID.
+5. It will generate a clean list called `customer_access_list.csv` containing just: **Email, Name, TradingView ID, Products**.
+
+This list is exactly what you need to manually grant access or move them to a new system.
+
+---
+
+## 3. Automating the Content Migration
 
 I have created a script called `import_products.py` in this folder.
 
@@ -51,7 +73,7 @@ If you place your exported `products.csv` into the `Legacy_Backup` folder, runni
 
 ---
 
-## 3. Switching the Domain (Go Live)
+## 4. Switching the Domain (Go Live)
 
 Once you have your data backed up and the new site is ready:
 
