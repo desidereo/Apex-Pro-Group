@@ -1,0 +1,60 @@
+# Procurement "Shopping List" & Evidence Pack
+**Project:** G-Labs Digital Expansion (UKSPF 2026)
+**Total Value:** £4,800 - £4,900
+**Status:** READY FOR APPROVAL
+
+---
+
+## ITEM 1: High-Performance AI Workstation (The "Engine")
+**Requirement:** A dedicated GPU workstation capable of running localized Neural Networks (Llama-3, PyTorch) for financial modeling.
+**Target Spec:** NVIDIA RTX 5090 (32GB VRAM), 64GB+ DDR5 RAM, Ryzen 9 / i9 CPU.
+
+### Quote 1 (Preferred Supplier)
+*   **Supplier:** Scan Computers (3XS Systems)
+*   **System:** 3XS "Blackwell" AI Workstation (Custom Config)
+*   **Specs:**
+    *   **GPU:** NVIDIA GeForce RTX 5090 (32GB VRAM)
+    *   **RAM:** 64GB Corsair Vengeance DDR5
+    *   **CPU:** AMD Ryzen 9 9950X or Intel Core i9-14900K
+    *   **Storage:** 2TB NVMe PCIe 5.0 SSD
+*   **Estimated Price:** ~£3,950 - £4,200 (inc VAT)
+*   **Link:** https://www.scan.co.uk/3xs/custom/deep-learning/workstations
+*   **Google Search for Exact Model:** [Click Here to Find on Google](https://www.google.com/search?q=Scan+3XS+RTX+5090+Workstation+UK)
+*   **Why this one:** The RTX 5090 (released 2025) offers 32GB VRAM, which is the critical threshold for running "Enterprise" grade AI models locally. This makes the hardware relevant for 3-5 years.
+
+### Quote 2 (Alternative)
+*   **Supplier:** CyberPowerPC UK
+*   **System:** Infinity X149 RTX 5090 Gaming PC
+*   **Price:** ~£4,259.00
+*   **Link:** https://www.cyberpowersystem.co.uk/category/nvidia-rtx-5090-pcs
+*   **Notes:** Slightly more expensive but often has faster shipping.
+
+## ITEM 2: High-Refresh Monitors (The "Cockpit")
+*   **Requirement:** 2x 27" 4K or QHD Monitors for coding and data visualization.
+*   **Budget:** ~£600 - £800 (Total)
+*   **Supplier:** Scan / Amazon Business
+
+## ITEM 3: Digital Marketing / SEO Audit
+**Requirement:** A strategic review of our web presence to launch the new "Educational Platform".
+
+### Quote 1 (Preferred Supplier - Local Essex)
+*   **Supplier:** Safetech Ltd (Essex)
+*   **Service:** Technical SEO Audit & Digital Strategy Review
+*   **Link:** https://safetech.co.uk/seo-essex/
+*   **Price:** £800.00 (Flexible Small Business Package)
+*   **Why:** They are a local Essex agency (supports the "Local Business" narrative) and offer flexible audit pricing.
+
+### Quote 2 (Alternative)
+*   **Supplier:** Sierra Six Media (Essex)
+*   **Service:** SEO Performance Audit
+*   **Link:** https://sierrasixmedia.co.uk/
+*   **Price:** £1,200.00 (Comprehensive Audit)
+*   **Notes:** Higher tier agency, good for "scaling" comparison.
+
+---
+
+## TOTAL FUNDING REQUEST
+**Hardware (Workstation):** £3,999.00
+**Hardware (Monitors):** £498.00
+**Services (SEO Audit):** £500.00
+**TOTAL:** £4,997.00 (Perfectly Under £5,000 Limit)

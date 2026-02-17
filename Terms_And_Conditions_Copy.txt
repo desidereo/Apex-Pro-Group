@@ -1,0 +1,36 @@
+1. Introduction
+Welcome to G-Labs Software. These Terms and Conditions govern your use of the G-Labs software and analytics services. By accessing or using our software, you agree to be bound by these Terms and Conditions.
+
+2. Subscription Term and Renewal
+a. The minimum subscription term for G-Labs software is one month. Your subscription will automatically renew each month unless you cancel it.
+b. You are responsible for canceling your subscription if you no longer wish to use the software. Cancellations can be done through the customer portal on our website.
+
+3. No Refund Policy
+a. G-Labs operates with a strict no-refund policy. Once you have subscribed to our software, we do not offer refunds for any reason, including partial months.
+b. We encourage our customers to thoroughly evaluate the software during their subscription period to ensure it meets their needs.
+
+4. Use of Software
+a. As a subscriber, you are granted a non-exclusive, non-transferable license to use the G-Labs software for your personal or business research and analysis.
+b. You agree not to use the software for any illegal purpose or in any manner inconsistent with these Terms and Conditions.
+
+5. Technology Usage & Data Limitations
+a. You acknowledge that G-Labs software is a tool for market data analysis, visualization, and educational research.
+b. The software provides statistical models and historical data analysis. Past performance of any model, indicator, or signal is not indicative of future market behavior.
+c. G-Labs does not offer investment advice, and any content within the software should not be construed as such. G-Labs will not accept liability for any loss or damage which may arise directly or indirectly from the use of or reliance on such information.
+d. You are solely responsible for your interpretation of the data and any research outcomes derived from the software. You acknowledge that all analytical outcomes are probabilistic in nature.
+
+6. Cancellation
+a. You may cancel your subscription at any time via the customer portal. The cancellation will be effective at the end of your current billing cycle.
+b. You are responsible for ensuring your cancellation is processed correctly. G-Labs is not responsible for any issues arising from a failure to properly cancel your subscription.
+
+7. Modifications to Terms and Conditions
+G-Labs reserves the right to modify these Terms and Conditions at any time. Your continued use of the software after any such changes constitutes your acceptance of the new Terms and Conditions.
+
+8. Contact Us
+If you have any questions about these Terms and Conditions, please contact us via our website contact form.
+
+9. Company Information
+G-Labs is a trading name of APEX PRO GROUP LTD.
+Registered in England & Wales, Company Number: 13048804.
+Registered Office: 53 Manor Lane, Harwich, Essex, England, CO12 4EA.
+Nature of Business: 62012 - Business and domestic software development.

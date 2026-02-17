@@ -1,0 +1,43 @@
+*** OPTION 1: Plain Text (Copy and Paste this if using the Visual Editor) ***
+
+LEGAL DISCLAIMER & TERMS OF USE
+
+1. Educational Purpose Only
+All software, algorithms, market data visualizations, and educational content provided by G-Labs Software (and its affiliates) are strictly for educational, research, and analytical purposes. G-Labs Software is a technology development firm, not a financial services provider, broker, or investment advisor.
+
+2. No Financial Advice
+The information, tools, and indicators provided by our software do not constitute financial advice, investment recommendations, or a solicitation to buy or sell any financial instrument. G-Labs Software does not provide personalized investment advice or portfolio management. Users are solely responsible for their own financial decisions and research.
+
+3. Technology Limitations
+Our software is designed to analyze historical data and market patterns using statistical models. However, past performance of any algorithm, indicator, or market signal is not indicative of future results. Financial markets are subject to inherent risks and variables that software cannot predict with certainty. Users should not rely solely on automated tools for financial decision-making.
+
+4. User Responsibility
+By using G-Labs Software products, you acknowledge that you are using these tools to assist your own research and analysis. You agree that G-Labs Software shall not be held liable for any decisions made or actions taken based on the information or tools provided. We recommend consulting with a qualified financial advisor before making any investment decisions.
+
+5. Company Information
+G-Labs is a trading name of APEX PRO GROUP LTD.
+Registered in England & Wales, Company Number: 13048804.
+Registered Office: 53 Manor Lane, Harwich, Essex, England, CO12 4EA.
+
+--------------------------------------------------------------------------------
+
+*** OPTION 2: HTML Code (Copy and Paste this if using the "Text" or "Code" Editor) ***
+
+<h3><strong>LEGAL DISCLAIMER & TERMS OF USE</strong></h3>
+
+<p><strong>1. Educational Purpose Only</strong><br>
+All software, algorithms, market data visualizations, and educational content provided by G-Labs Software (and its affiliates) are strictly for educational, research, and analytical purposes. G-Labs Software is a technology development firm, not a financial services provider, broker, or investment advisor.</p>
+
+<p><strong>2. No Financial Advice</strong><br>
+The information, tools, and indicators provided by our software do not constitute financial advice, investment recommendations, or a solicitation to buy or sell any financial instrument. G-Labs Software does not provide personalized investment advice or portfolio management. Users are solely responsible for their own financial decisions and research.</p>
+
+<p><strong>3. Technology Limitations</strong><br>
+Our software is designed to analyze historical data and market patterns using statistical models. However, past performance of any algorithm, indicator, or market signal is not indicative of future results. Financial markets are subject to inherent risks and variables that software cannot predict with certainty. Users should not rely solely on automated tools for financial decision-making.</p>
+
+<p><strong>4. User Responsibility</strong><br>
+By using G-Labs Software products, you acknowledge that you are using these tools to assist your own research and analysis. You agree that G-Labs Software shall not be held liable for any decisions made or actions taken based on the information or tools provided. We recommend consulting with a qualified financial advisor before making any investment decisions.</p>
+
+<p><strong>5. Corporate Information</strong><br>
+G-Labs is a trading name of APEX PRO GROUP LTD.<br>
+Registered in England & Wales No. 13048804.<br>
+Registered Office: 53 Manor Lane, Harwich, Essex, England, CO12 4EA.</p>

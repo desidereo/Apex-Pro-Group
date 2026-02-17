@@ -1,0 +1,67 @@
+# SALES STRATEGY: THE "INSTITUTIONAL" PIVOT (2026)
+**Goal:** Generate immediate cash flow to fund the "Connix" development.
+**Method:** Sell existing products using the new "Sanitized" narrative.
+**Target Revenue:** £5,000 - £10,000 / month.
+
+---
+
+## 1. THE NEW "GRANT-SAFE" OFFER
+We are no longer selling "Get Rich Quick" signals. We are selling **"Market Clarity."**
+
+*   **Old Pitch:** "Buy this indicator to make money." (Banned/High Risk)
+*   **New Pitch:** "Retail data is blind. Use our Structure Scanner to see where the institutions are positioned." (Safe/High Value)
+
+### Product Lineup (Sanitized):
+1.  **Structure Scanner (formerly Market Maker):**
+    *   *Pitch:* "Visualizes the Order Book and Market Structure in real-time."
+    *   *Price:* £19.99 (Volume Seller).
+2.  **Connix (Institutional Engine):**
+    *   *Pitch:* "The same logic used by proprietary trading firms, now available for MT4/5."
+    *   *Price:* £49.99 (Premium).
+
+---
+
+## 2. YOUTUBE STRATEGY: "THE SCIENCE OF TRADING"
+**Channel:** @g-labs
+**Tone:** Educational, Serious, Analytical. (Think "University Professor" not "YouTuber").
+
+### Video Ideas (Next 4 Weeks):
+1.  **"Why 90% of Indicators Fail (The Math)"**
+    *   *Content:* Show RSI/MACD lagging. Show "Structure Scanner" leading.
+    *   *CTA:* "Stop guessing. See the data."
+2.  **"How Institutions Hide Their Orders"**
+    *   *Content:* Explain "Iceberg Orders" and "Liquidity Grabs". Show how Connix detects them.
+    *   *CTA:* "Download the scanner to see these zones."
+3.  **"Coding an Algorithm in 10 Minutes"**
+    *   *Content:* Screen recording of you coding. Establishes you as a **Developer** (Authority).
+    *   *CTA:* "Get the source code."
+
+---
+
+## 3. EMAIL MARKETING: THE "INSTITUTIONAL INSIDER"
+**Frequency:** 1 email per week.
+**Goal:** Education -> Trust -> Sale.
+
+### Email Sequence:
+*   **Email 1 (The Problem):** "Why your charts are lying to you." (Lagging vs Leading data).
+*   **Email 2 (The Solution):** "How we reverse-engineered the Order Book." (The Connix story).
+*   **Email 3 (The Proof):** Case study of a market structure shift.
+*   **Email 4 (The Offer):** "Get Institutional Visibility for the price of a lunch (£19.99)."
+
+---
+
+## 4. MQL5 MARKETPLACE OPTIMIZATION
+**Status:** This is your passive income engine. We need to update the listings to match the website.
+
+### Action Checklist:
+1.  [ ] **Rename Products:** Ensure "Market Maker" is changed to "Structure Scanner" on MQL5.
+2.  [ ] **Update Screenshots:** Remove any images with "$$$" or "Profit" claims. Use clean, technical charts.
+3.  [ ] **Update Description:** Copy/Paste the "Sanitized" descriptions we wrote for the website.
+4.  [ ] **Price:** Set competitive entry price (£30-£50) to drive reviews.
+
+---
+
+## 5. IMMEDIATE ACTION PLAN
+1.  **Record Video 1:** "Why Indicators Fail" (Script available if needed).
+2.  **Send Email 1:** To your existing database.
+3.  **Update MQL5:** Sync names with the website.

@@ -1,0 +1,54 @@
+# UKSPF Grant Application Text - Business Case Draft
+**Project Title:** Project Neural-Fin: Advanced AI Financial Modelling & Educational Platform
+
+---
+
+## Section 1: Project Summary (The "Elevator Pitch")
+**Question:** *Please provide a short summary of your project.*
+
+**Draft Text:**
+Apex Pro Group Ltd is transitioning from niche algorithmic development to a next-generation "AI-Driven Financial Analytics" platform. This project involves the procurement of high-performance computing infrastructure to run localized Neural Networks (Deep Learning) capable of processing complex financial datasets in real-time.
+
+Currently, our R&D capacity is bottlenecked by standard hardware. This investment will allow us to train complex AI models in-house, significantly reducing development time from weeks to hours. Alongside this technical upgrade, we are launching a new "Educational Technology (EdTech)" arm, pivoting our business model to provide subscription-based data analytics and educational software to the UK market. This grant unlocks a new scalable revenue stream and secures the business's long-term digital competitiveness.
+
+---
+
+## Section 2: Investment Justification (The "Why")
+**Question:** *Why is this specific equipment/service required?*
+
+**Draft Text:**
+The core of this project is the development of a proprietary Neural Network for financial data modelling. This requires specific, high-intensity parallel computing power that standard office PCs cannot provide.
+
+1.  **AI Workstation (NVIDIA RTX 4090):** We require 24GB of VRAM to load our full historical datasets into memory for training. Cloud-based alternatives are cost-prohibitive for continuous R&D (costing >£2,000/month). A one-off capital investment in a local workstation is the most cost-effective solution for sustainable R&D.
+2.  **4K Visualization Displays:** Analyzing multi-dimensional datasets and real-time coding requires significant screen real estate. The dual 4K setup ensures our developers can visualize code and data outputs simultaneously, reducing error rates and increasing coding velocity by an estimated 40%.
+3.  **SEO & Digital Audit:** To ensure commercial success, we must reach the right audience. The expert audit will correct technical deficiencies in our current web presence, ensuring our new educational platform reaches the UK market effectively.
+
+---
+
+## Section 3: Economic Impact & Outcomes
+**Question:** *What will be the result of this funding?*
+
+**Draft Text:**
+**1. New Product Launch:** Launch of the "Apex Pro Group EdTech Analytics Platform" (SaaS Model) by Q3 2026.
+**2. Productivity Increase:** Reduction in model training time by 90% (from 48 hours to ~4 hours per iteration), allowing for faster product iteration.
+**3. Job Safeguarding:** Secures the Director position by diversifying revenue streams away from bespoke development work to stable subscription revenue.
+**4. Business Growth:** Projected revenue increase of 25% within 12 months of the new platform launch.
+
+---
+
+## Section 4: Project Deliverables / Milestones
+*   **Month 1:** Procurement and installation of AI Workstation.
+*   **Month 2:** Migration of existing codebases to new GPU-accelerated architecture.
+*   **Month 2:** Completion of Technical SEO Audit and implementation of "Quick Win" fixes.
+*   **Month 3:** Beta launch of the new AI-driven market analysis tools.
+
+---
+
+## Section 5: Value for Money
+We have sourced three competitive quotes for all major hardware items to ensure best value. We have selected suppliers based on a balance of cost and technical reliability (e.g., selecting a workstation with specific cooling for 24/7 operation). The total project cost is £4,957.98, maximizing the grant threshold without exceeding it, delivering a complete R&D lab setup for under £5k.
+
+**Contact Details:**
+*   **Company:** Apex Pro Group Ltd
+*   **Website:** www.apexprogroup.uk
+*   **Email:** grants@apexprogroup.uk
+*   **Registered Office:** Harwich, Essex

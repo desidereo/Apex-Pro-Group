@@ -1,0 +1,24 @@
+MITIE NORTH SITE - STAFF ACCESS LINKS
+===================================
+Generated: 2026-01-24
+
+MANAGER DASHBOARD
+----------------
+Manager: https://desidereo.pythonanywhere.com/manager/dfd5092d-af40-4cfa-9a96-eacf61eb094b
+
+STAFF LINKS
+-----------
+Chris Conway:   https://desidereo.pythonanywhere.com/?token=541f2542-2071-4eb7-a74a-7474fb1f56b8
+Garry Walls:    https://desidereo.pythonanywhere.com/?token=b2fbe65d-96cd-4bea-8fd7-6bcd6d69a148
+Lee Ashley:     https://desidereo.pythonanywhere.com/?token=ebb0f493-58cc-4521-9758-a5be2c453c32
+Linda Osborne:  https://desidereo.pythonanywhere.com/?token=5d0a609f-e7ba-4f49-a633-f533ccbc49d9
+Dan:            https://desidereo.pythonanywhere.com/?token=d36c4792-126e-43a4-9db2-d694e9f20e78
+Danny Youngman: https://desidereo.pythonanywhere.com/?token=d8c62c40-96f5-4b12-b85a-d20fb8348b8f
+Steve Clarke:   https://desidereo.pythonanywhere.com/?token=73323b12-0e4e-4ec1-a6cb-284cb172a764
+Simon Twomey:   https://desidereo.pythonanywhere.com/?token=cf68a51f-6b65-46b1-8271-b2fc4960f0e9
+Steve Sawyer:   https://desidereo.pythonanywhere.com/?token=5622c531-6307-4f62-869b-95b91761d934
+Mike Heath:     https://desidereo.pythonanywhere.com/?token=fdfd0b52-a22c-424d-810b-ecf893d6bbbd
+Mark Underwood: https://desidereo.pythonanywhere.com/?token=01391d47-19ac-4b8e-aaef-d1a50c32aa56
+Garry Goodchild: https://desidereo.pythonanywhere.com/?token=6ee7ad8c-0f14-472e-b7ba-0b752122397f
+John Moore:     https://desidereo.pythonanywhere.com/?token=82195129-7d7e-40ed-beaf-4e4959ff2f4b
+Paul Brown:     https://desidereo.pythonanywhere.com/?token=6b84b4ed-ea10-4987-aedf-8b6434586e9e

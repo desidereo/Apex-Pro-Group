@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Indicators | G-Labs</title>
+    <style>
+        :root { --primary: #2962ff; --dark: #131722; --light: #f0f3fa; --success: #00c853; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #333; background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { padding: 20px 0; border-bottom: 1px solid #eee; background: #fff; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--dark); text-decoration: none; }
+        .back-link { color: #666; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+        
+        .hero { padding: 60px 0 40px; text-align: center; background: linear-gradient(180deg, #fff 0%, #f8f9fd 100%); }
+        h1 { font-size: 2.5rem; color: var(--dark); margin-bottom: 10px; }
+        .subtitle { color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+        
+        /* Grid Layout for 13 Products */
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 30px; 
+            padding: 40px 0 80px;
+        }
+        
+        .product-card { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            transition: transform 0.2s, box-shadow 0.2s; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+            border-color: var(--primary);
+        }
+        
+        .card-img { 
+            height: 200px; 
+            background: #f5f5f5; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #999;
+            font-size: 3rem;
+            position: relative;
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--success);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .card-content { 
+            padding: 25px; 
+            flex-grow: 1; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        .card-title { 
+            margin: 0 0 10px; 
+            font-size: 1.25rem; 
+            color: var(--dark); 
+        }
+        
+        .card-desc { 
+            color: #666; 
+            font-size: 0.9rem; 
+            line-height: 1.5; 
+            margin-bottom: 20px; 
+            flex-grow: 1; 
+        }
+        
+        .features-list {
+            margin: 0 0 20px;
+            padding: 0;
+            list-style: none;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        .features-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .features-list li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .price-tag {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .price-tag span {
+            font-size: 0.9rem;
+            color: #999;
+            font-weight: normal;
+            text-decoration: line-through;
+            margin-right: 5px;
+        }
+
+        .btn-stripe { 
+            background: #635bff; /* Stripe Blurple */
+            color: #fff; 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: 600; 
+            font-size: 0.9rem;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-stripe:hover { background: #4b45c6; }
+
+        @media(max-width: 768px) { 
+            .product-grid { grid-template-columns: 1fr; } 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">G-LABS</a>
+            <a href="index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Home
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>TradingView Collection</h1>
+            <p class="subtitle">Professional-grade charting tools and indicators. Compatible with any device via the TradingView Cloud.</p>
+        </section>
+
+        <div class="product-grid">
+            
+            <!-- 1. BTMM State Engine -->
+            <div class="product-card">
+                <div class="card-img" style="background: #e3f2fd; color: #2962ff;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                    <span class="badge">Best Seller</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">BTMM State Engine</h2>
+                    <p class="card-desc">Visually maps the entire "Story of Price" on your chart. Automates Asian Range, Levels (1,2,3), and Peak Formations.</p>
+                    <ul class="features-list">
+                        <li>Automated Asian Range Box</li>
+                        <li>Real-time Level Counting (L1/L2/L3)</li>
+                        <li>Peak Formation (PFH/PFL) Alerts</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag"><span>$199</span> $149</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('btmm-state-engine')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. BTMM Multi-Pair Scanner -->
+            <div class="product-card">
+                <div class="card-img" style="background: #e8f5e9; color: #00c853;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <span class="badge">New</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">BTMM Multi-Pair Scanner</h2>
+                    <p class="card-desc">Monitor market structure across 6 pairs simultaneously. The perfect companion to the State Engine.</p>
+                    <ul class="features-list">
+                        <li>6-Pair Dashboard</li>
+                        <li>Pattern Recognition Alerts</li>
+                        <li>Vector Candle & TDI Filters</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag"><span>$149</span> $99</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('btmm-scanner')">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Trend Continuation Pro -->
+            <div class="product-card">
+                <div class="card-img">TC</div>
+                <div class="card-content">
+                    <h2 class="card-title">Trend Continuation Pro</h2>
+                    <p class="card-desc">Identifies high-probability pullbacks in established trends. Perfect for Type 2 and Type 3 entries.</p>
+                    <ul class="features-list">
+                        <li>Auto-Fibonacci Retracements</li>
+                        <li>Trend Strength Meter</li>
+                        <li>Multi-Timeframe Analysis</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$79</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-3')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Institutional Zones -->
+            <div class="product-card">
+                <div class="card-img">IZ</div>
+                <div class="card-content">
+                    <h2 class="card-title">Institutional Zones</h2>
+                    <p class="card-desc">Highlights bank-level supply and demand zones where price is likely to react strongly.</p>
+                    <ul class="features-list">
+                        <li>Order Block Detection</li>
+                        <li>Imbalance (FVG) Highlighter</li>
+                        <li>Rejection Wick Alerts</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$89</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-4')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Volatility Master -->
+            <div class="product-card">
+                <div class="card-img">VM</div>
+                <div class="card-content">
+                    <h2 class="card-title">Volatility Master</h2>
+                    <p class="card-desc">Visualizes market volatility to keep you out of consolidation and into the big moves.</p>
+                    <ul class="features-list">
+                        <li>ADX & ATR Integration</li>
+                        <li>Squeeze Detection</li>
+                        <li>Explosion Alerts</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$69</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-5')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Divergence Hunter -->
+            <div class="product-card">
+                <div class="card-img">DH</div>
+                <div class="card-content">
+                    <h2 class="card-title">Divergence Hunter</h2>
+                    <p class="card-desc">Automatically spots regular and hidden divergence between price and oscillators.</p>
+                    <ul class="features-list">
+                        <li>RSI & MACD Divergence</li>
+                        <li>Trend Reversal Signals</li>
+                        <li>Customizable Sensitivity</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$79</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-6')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Session Manager -->
+            <div class="product-card">
+                <div class="card-img">SM</div>
+                <div class="card-content">
+                    <h2 class="card-title">Session Manager</h2>
+                    <p class="card-desc">Clearly marks major trading sessions (London, NY, Tokyo) directly on your chart.</p>
+                    <ul class="features-list">
+                        <li>Auto-Timezone Adjustment</li>
+                        <li>Session Overlaps</li>
+                        <li>Pips per Session Tracker</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$49</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-7')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Scalper's Toolkit -->
+            <div class="product-card">
+                <div class="card-img">ST</div>
+                <div class="card-content">
+                    <h2 class="card-title">Scalper's Toolkit</h2>
+                    <p class="card-desc">A suite of tools designed specifically for low-timeframe traders (M1/M5).</p>
+                    <ul class="features-list">
+                        <li>Spread Monitor</li>
+                        <li>One-Click Trade Panel</li>
+                        <li>Momentum Burst Alerts</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$99</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-8')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Currency Strength Meter -->
+            <div class="product-card">
+                <div class="card-img">CS</div>
+                <div class="card-content">
+                    <h2 class="card-title">Currency Strength Meter</h2>
+                    <p class="card-desc">See which currencies are strong and which are weak in real-time.</p>
+                    <ul class="features-list">
+                        <li>8 Major Currencies</li>
+                        <li>Live Updates</li>
+                        <li>Matrix View</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$59</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-9')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Harmonic Pattern Pro -->
+            <div class="product-card">
+                <div class="card-img">HP</div>
+                <div class="card-content">
+                    <h2 class="card-title">Harmonic Pattern Pro</h2>
+                    <p class="card-desc">Automatically draws Gartley, Butterfly, Bat, and Crab patterns with high accuracy.</p>
+                    <ul class="features-list">
+                        <li>Auto-Completion Zones</li>
+                        <li>Stop Loss/Take Profit Levels</li>
+                        <li>History Backtesting</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$129</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-10')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Risk Manager Assistant -->
+            <div class="product-card">
+                <div class="card-img">RM</div>
+                <div class="card-content">
+                    <h2 class="card-title">Risk Manager Assistant</h2>
+                    <p class="card-desc">Calculates lot size automatically based on your risk percentage and stop loss.</p>
+                    <ul class="features-list">
+                        <li>Drag & Drop Lines</li>
+                        <li>Balance Protection</li>
+                        <li>RR Ratio Calculator</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$89</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-11')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. News Event Trader -->
+            <div class="product-card">
+                <div class="card-img">NT</div>
+                <div class="card-content">
+                    <h2 class="card-title">News Event Trader</h2>
+                    <p class="card-desc">Plots high-impact economic news events directly on your chart before they happen.</p>
+                    <ul class="features-list">
+                        <li>Forex Factory Feed</li>
+                        <li>Impact Filtering</li>
+                        <li>Countdown Timer</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag">$69</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('product-12')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. Ultimate Bundle -->
+            <div class="product-card" style="border: 2px solid var(--primary);">
+                <div class="card-img" style="background: var(--dark); color: #fff;">
+                    ALL
+                    <span class="badge" style="background: #ff4081;">Save 40%</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">G-Labs Ultimate Bundle</h2>
+                    <p class="card-desc">Get access to the entire suite of 12 indicators for a single discounted price.</p>
+                    <ul class="features-list">
+                        <li>Includes State Engine & Scanner</li>
+                        <li>Lifetime Updates</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <div class="price-row">
+                        <div class="price-tag"><span>$999</span> $599</div>
+                        <button class="btn-stripe" onclick="stripeCheckout('ultimate-bundle')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="background: #f0f3fa; padding: 40px 0; text-align: center; font-size: 0.9rem; color: #666; margin-top: 60px;">
+        <div class="container">
+            <p>&copy; 2026 G-Labs Software. All Rights Reserved.</p>
+            <p>G-Labs is a trading name of Apex Pro Group Ltd.</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy.html" style="color: #666; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+                <a href="terms.html" style="color: #666; text-decoration: none;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function stripeCheckout(productId) {
+            // Placeholder for Stripe Logic
+            // In a real implementation, you would redirect to a Stripe Payment Link URL
+            // e.g., window.location.href = 'https://buy.stripe.com/...'
+            
+            const message = `Stripe Integration Required!\n\nYou clicked to buy: ${productId}\n\nTo make this work:\n1. Create a Payment Link in your Stripe Dashboard.\n2. Paste the URL into the onclick event for this button in the HTML code.`;
+            alert(message);
+        }
+    </script>
+</body>
+</html>

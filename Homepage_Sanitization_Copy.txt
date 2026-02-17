@@ -1,0 +1,51 @@
+
+## 22. HOW TO FIND & EDIT THE FOOTER (Step-by-Step)
+**Method 1: The "Edit with Elementor" Shortcut (Easiest)**
+1.  Go to your actual website homepage (view it as a visitor).
+2.  Look at the black bar at the very top of the screen (the Admin Bar).
+3.  Hover over **"Edit with Elementor"**.
+4.  A dropdown menu will appear. Look for **"Footer"** (or something like "Global Footer").
+5.  Click that. It will take you straight to the footer editor.
+
+**Method 2: The Dashboard Route**
+1.  Go to your WordPress Dashboard.
+2.  Look for **Templates** in the left sidebar (under "Elementor").
+3.  Click **Theme Builder**.
+4.  On the next screen, look for the **Footer** tab (usually on the left side).
+5.  Click on your active footer (it might say "Global Footer" or "Main Footer").
+6.  Click **Edit**.
+
+**Method 3: The Customizer (If you don't use Elementor for the footer)**
+1.  Go to **Appearance > Customize**.
+2.  Look for **Footer Builder** or **Footer Widgets**.
+
+## 23. ABOUT PAGE & "MEET GARRY" (Sanitization)
+**Context:** This page is critical. Investors/Grant officers check this to see if you are a "Guru" or a "Tech Founder". We must remove the "Trader" narrative and replace it with a "Developer/Founder" narrative.
+
+**A. The Headline**
+*   **Old:** "Master the Markets with Garry"
+*   **New:** "Pioneering Market Structure Analytics" or "Data-Driven Financial Technology"
+
+**B. "Meet Garry" Section (The Bio)**
+*   **Remove:** Stories about "blowing accounts," "struggling for years," or "finding the secret."
+*   **Replace with:**
+    > **Garry Goodchild – Founder & Lead Architect**
+    >
+    > "With a focus on software development and algorithmic logic, Garry founded G-Labs to solve a fundamental problem in the retail trading space: the lack of institutional-grade data visibility.
+    >
+    > Under his leadership, Apex Pro Group has developed proprietary algorithms that process complex market structures into clear, actionable data visualization tools. His mission is to transition the industry from subjective guesswork to objective, data-backed analysis."
+
+**C. "Our Story" / "The Mission"**
+*   **Remove:** "Helping you achieve financial freedom."
+*   **Replace with:**
+    > "G-Labs (a trading name of Apex Pro Group Ltd) is a UK-based software development company specializing in financial technology. We build advanced analytical tools that integrate with popular platforms to enhance market transparency and decision-making capabilities for users worldwide."
+
+## 24. COMPANY ADDRESS IMPLEMENTATION (Checklist)
+**Context:** You provided the official details for Apex Pro Group Ltd. Now we must ensure they are visible on the site to meet UK compliance laws (Companies Act 2006).
+
+**Action Items:**
+1.  [ ] **Footer:** Update the bottom text on *every* page.
+    *   *Text:* "G-Labs is a trading name of APEX PRO GROUP LTD. Registered in England & Wales No. 13048804. Registered Office: 53 Manor Lane, Harwich, Essex, England, CO12 4EA."
+2.  [ ] **Contact Page:** Add the Registered Office address clearly under the "Contact Us" or "Locations" section.
+3.  [ ] **Privacy Policy / Terms:** Ensure the new text (from the other files I prepared) is pasted in.
+

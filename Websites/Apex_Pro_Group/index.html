@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Pro Group | Decentralized Financial Infrastructure</title>
+    <style>
+        :root {
+            --bg-color: #0a0b10;
+            --text-color: #e0e0e0;
+            --accent-color: #00f2ff;
+            --secondary-color: #1a1c25;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(10, 11, 16, 0.95);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1f222e;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 50% 50%, #1a1c25 0%, #0a0b10 100%);
+            position: relative;
+            overflow: hidden;
+            justify-content: center; /* Center content horizontally */
+            text-align: center; /* Center text */
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto; /* Ensure centering */
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            background: linear-gradient(90deg, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            color: #aaa;
+            margin: 0 auto 40px auto;
+            max-width: 700px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: var(--secondary-color);
+            padding: 30px;
+            border-left: 3px solid var(--accent-color);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .feature-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: #050508;
+            padding: 50px 0;
+            border-top: 1px solid #1f222e;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .hero-content { padding: 0 15px; }
+            .about-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <div class="logo">APEX <span>PRO GROUP</span></div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#technology">Technology</a>
+                <a href="#contact">R&D Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Decentralized High-Performance Computing for Financial Markets.</h1>
+            <p class="hero-sub">Apex Pro Group develops edge-first infrastructure and algorithmic solutions that bridge the gap between institutional latency and retail accessibility.</p>
+            <a href="#contact" class="btn">CONTACT R&D</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-grid">
+            <div>
+                <h2 class="section-title">The Edge Advantage.</h2>
+                <p>In a market defined by microseconds, proximity is power. Apex Pro Group (APG) is pioneering "Localized HPC Nodes"—proprietary hardware units that bring institutional-grade data processing to the residential edge.</p>
+                <p>By moving the computation closer to the user, we reduce latency, enhance execution precision, and empower the next generation of algorithmic trading strategies.</p>
+            </div>
+            <div style="background: #1a1c25; height: 300px; display: flex; align-items: center; justify-content: center; border: 1px solid #333;">
+                <span style="color: #444; font-size: 1.5rem;">[Server Rack / Node Visual]</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" style="background: #0e0f14;">
+        <div class="container">
+            <h2 class="section-title">R&D & Innovation</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Localized Compute</h3>
+                    <p>Reducing reliance on centralized cloud latency by distributing processing power to the network edge.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI-Driven Signal Processing</h3>
+                    <p>Proprietary Llama-3 based analysis for real-time market sentiment and financial time-series forecasting.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>FIX Protocol Integration</h3>
+                    <p>Bridging institutional data standards (FIX 4.4/5.0) into accessible retail trading environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" style="padding: 80px 0; background: #fff;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--dark);">Our Mission</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+                        Apex Pro Group Ltd is a UK-based FinTech research and development firm dedicated to democratizing access to institutional-grade financial analytics.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: #555;">
+                        Our current industrial research focuses on "Localized High-Performance Computing (HPC)," aiming to overcome the latency and cost barriers of cloud-based AI. By moving processing to the edge, we enable independent investors and SMEs to leverage advanced Neural Networks and Machine Learning models without the reliance on centralized cloud infrastructure.
+                    </p>
+                </div>
+                <div style="background: var(--light); padding: 40px; border-radius: 12px; border-left: 5px solid var(--primary);">
+                    <h3 style="margin-top: 0; color: var(--dark);">Corporate Information</h3>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Registered Office</h4>
+                        <p style="margin: 0; font-weight: 600; font-size: 1.1rem;">Apex Pro Group Ltd</p>
+                        <p style="margin: 5px 0 0 0; color: #555;">Harwich, Essex, United Kingdom</p>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Contact</h4>
+                        <p style="margin: 0;">
+                            <a href="mailto:support@apexprogroup.uk" style="color: var(--accent-color); text-decoration: none; font-weight: 600; font-size: 1.1rem;">support@apexprogroup.uk</a>
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Registration</h4>
+                        <p style="margin: 0; color: #555;">Registered in England & Wales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2026 Apex Pro Group Ltd. All Rights Reserved.</p>
+            <p style="margin-top: 20px; font-size: 0.8rem;">
+                <a href="privacy.html" style="color: #666; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+                <a href="terms.html" style="color: #666; text-decoration: none;">Terms & Conditions</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

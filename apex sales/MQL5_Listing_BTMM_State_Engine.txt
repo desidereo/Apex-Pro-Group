@@ -1,0 +1,72 @@
+# MQL5 PRODUCT LISTING: BTMM STATE ENGINE
+
+## 1. PRICING STRATEGY
+**Status:** You have validated High Ticket sales ($125/yr - $200 Bundle). Do NOT lower the brand value with a $49 sticker.
+
+*   **MQL5 Price:** **$149 USD** (Lifetime)
+    *   *Why?* This aligns with your $125/year TradingView price. It's a "deal" compared to the annual sub, but still premium enough to command respect.
+    *   *Psychology:* "Why pay $125/year when I can own the MT5 version for $149?" -> Drives sales.
+*   **Rental Option:** **$49 USD / Month**
+    *   *Why?* Anchors the price. If renting is $50, buying at $150 (3 months rent) seems like a smart investment.
+
+---
+
+## 2. PRODUCT TITLE
+**BTMM State Engine: Institutional Market Maker Tracker**
+
+---
+
+## 3. SHORT DESCRIPTION (The "Snippet" visible in search)
+Stop guessing the trend. The State Engine tracks the Dealer Cycle (Accumulation, Manipulation, Distribution) in real-time. Institutional Grade logic for Prop Firm traders.
+
+---
+
+## 4. FULL DESCRIPTION (Copy & Paste this)
+
+<div style="text-align: center;">
+<h1>STOP GUESSING. SEE THE STATE.</h1>
+<h3>The only indicator that tracks the Market Maker's Cycle in Real-Time.</h3>
+</div>
+
+<p><b>Note:</b> This is the Official MT5 version of the G-Labs State Engine. (Previously available only via Private Invitation).</p>
+
+<p>Most indicators lag. They tell you what <i>happened</i>. The <b>BTMM State Engine</b> tells you what the Market Maker is <i>doing</i>.</p>
+
+<p>Designed by <b>G-Labs (Powered by Apex Pro Group)</b>, this algorithm ignores standard "price action" and instead tracks the underlying <b>State</b> of the dealer cycle. It identifies exactly when institutions are Accumulating orders, Manipulating the highs/lows, and Distributing profit.</p>
+
+<h3>✅ WHY THIS IS DIFFERENT</h3>
+<ul>
+    <li><b>No Repainting:</b> Once a State is confirmed, it stays. Perfect for backtesting.</li>
+    <li><b>Prop Firm Safe:</b> No Martingale, No Grid, No dangerous compounding. Just pure precision.</li>
+    <li><b>Edge-First Logic:</b> Built on the same logic used by our Institutional Edge Nodes.</li>
+</ul>
+
+<h3>📊 KEY FEATURES</h3>
+<p><b>1. The Cycle Identifier</b><br>
+Instantly see if the market is in Level 1 (Consolidation), Level 2 (Trend), or Level 3 (Exhaustion). Never trade against the cycle again.</p>
+
+<p><b>2. Liquidity Voids</b><br>
+The engine highlights "Unfilled Orders" (Imbalances) where price <b>must</b> return to balance the books. These are your Take Profit targets.</p>
+
+<p><b>3. Multi-Timeframe Dashboard</b><br>
+Monitor the "State" of M15, H1, and H4 simultaneously. Align the cycles for high-probability "Sniper" entries.</p>
+
+<h3>🎯 HOW TO TRADE IT</h3>
+<ol>
+    <li><b>Wait for the State:</b> Let the Engine confirm a "Level 3" Exhaustion.</li>
+    <li><b>Wait for the Break:</b> Price breaks the "Asian Range" or "Daily Open".</li>
+    <li><b>Enter:</b> Take the trade back towards the Liquidity Void.</li>
+</ol>
+
+<h3>🎁 LAUNCH BONUS (Limited Time)</h3>
+<p>Purchase the Lifetime License today and receive:</p>
+<ul>
+    <li><b>The "Gold Scalper" Preset:</b> My personal settings optimized for XAUUSD (Gold).</li>
+    <li><b>Discord Access:</b> Direct invite to the G-Labs VIP Community for daily analysis.</li>
+</ul>
+
+<p><b>Price Strategy:</b> This tool is sold privately for <b>$125/year</b> on other platforms. The MQL5 Lifetime License at <b>$149</b> is the best value available.</p>
+
+<div style="text-align: center;">
+<h3>Don't be the Liquidity. Be the Market Maker.</h3>
+</div>

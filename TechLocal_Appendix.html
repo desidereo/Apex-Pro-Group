@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G-Labs Technical Appendix</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            background: white;
+        }
+        .header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 24px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #0056b3;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        /* Diagram Styles */
+        .architecture-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .box {
+            border: 2px solid #444;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .arrow {
+            font-size: 24px;
+            color: #888;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #e9ecef;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .phase {
+            background: #0056b3;
+            color: white;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .phase-details {
+            font-size: 11px;
+            margin-top: 5px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Appendix: Technical Approach & Architecture</h1>
+        <h2>Project: Apex Pro Group Ltd (G-Labs) Localized HPC Node</h2>
+    </div>
+
+    <!-- Diagram 1: System Architecture -->
+    <div class="section">
+        <div class="section-title">Figure 1: The "Edge-First" Architecture (Data Flow)</div>
+        <p style="font-size: 13px;">This diagram illustrates the proprietary "Bridge" software connecting live market data to the local Neural Network, bypassing cloud processing.</p>
+        
+        <div class="architecture-box">
+            <div class="box">
+                <strong>1. Input Source</strong><br>
+                <span style="font-size: 12px;">Live Market Data Feed</span><br>
+                <span style="font-size: 12px;">(FIX Protocol / API)</span>
+            </div>
+            <div class="arrow">&rarr;</div>
+            <div class="box" style="border-color: #0056b3; border-width: 3px;">
+                <strong>2. The Innovation (Local Node)</strong><br>
+                <span style="font-size: 12px; color: #0056b3;">G-Labs Python Bridge</span><br>
+                <span style="font-size: 20px;">&darr;</span><br>
+                <span style="font-size: 12px; font-weight: bold;">Local GPU (RTX 4090)</span><br>
+                <span style="font-size: 11px;">Running Llama 3 / PyTorch</span>
+            </div>
+            <div class="arrow">&rarr;</div>
+            <div class="box">
+                <strong>3. Output</strong><br>
+                <span style="font-size: 12px;">Real-Time Analytics</span><br>
+                <span style="font-size: 12px;">(Sentiment / Volatility)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diagram 2: Cloud vs Edge Comparison -->
+    <div class="section">
+        <div class="section-title">Figure 2: Innovation Justification (Cloud vs. Local Edge)</div>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Standard Cloud AI (Competitors)</th>
+                    <th>G-Labs Local Edge Node (Proposed)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Latency</strong></td>
+                    <td>High (>200ms round trip)</td>
+                    <td><strong>Ultra-Low (<20ms on-bus)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Data Privacy</strong></td>
+                    <td>Data leaves premises (Risk)</td>
+                    <td><strong>100% Offline / On-Premise</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Cost Model</strong></td>
+                    <td>Rent (£10k/mo recurring)</td>
+                    <td><strong>Asset Ownership (One-off cost)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Accessibility</strong></td>
+                    <td>Banks & Hedge Funds only</td>
+                    <td><strong>SMEs & Retail Investors</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Diagram 3: Work Plan -->
+    <div class="section">
+        <div class="section-title">Figure 3: 6-Month R&D Implementation Plan</div>
+        <div class="timeline">
+            <div class="phase">
+                <strong>Phase 1: Hardware</strong><br>
+                (Months 1-2)
+            </div>
+            <div class="phase">
+                <strong>Phase 2: Software Bridge</strong><br>
+                (Months 3-4)
+            </div>
+            <div class="phase">
+                <strong>Phase 3: Integration</strong><br>
+                (Months 5-6)
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div class="phase-details" style="width: 30%;">
+                Procurement & Benchmarking<br>
+                GPU Stress Testing<br>
+                Driver Optimization
+            </div>
+            <div class="phase-details" style="width: 30%;">
+                Python/C++ API Development<br>
+                Local LLM Quantization<br>
+                Latency Reduction
+            </div>
+            <div class="phase-details" style="width: 30%;">
+                Live Data Feed Testing<br>
+                Performance Verification<br>
+                Final Reporting
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

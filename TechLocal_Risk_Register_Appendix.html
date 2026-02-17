@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apex Pro Group Ltd - Risk Register Appendix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.4;
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        .header h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        .meta-info {
+            text-align: right;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f6f8;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        /* Column Widths */
+        .col-id { width: 5%; text-align: center; }
+        .col-risk { width: 25%; }
+        .col-prob { width: 8%; text-align: center; }
+        .col-imp { width: 8%; text-align: center; }
+        .col-rating { width: 8%; text-align: center; font-weight: bold; }
+        .col-mitigation { width: 35%; }
+        .col-owner { width: 11%; }
+
+        /* Risk Ratings */
+        .rating-high { background-color: #ffcccc; color: #c0392b; }
+        .rating-med { background-color: #fff4e6; color: #d35400; }
+        .rating-low { background-color: #e8f8f5; color: #27ae60; }
+
+        .category-header {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 11px;
+            padding: 5px 10px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 10px;
+            color: #95a5a6;
+            text-align: center;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <h1>Risk Register</h1>
+            <h2>Project: Localized HPC Node for Real-Time Analytics</h2>
+        </div>
+        <div class="meta-info">
+            <strong>Apex Pro Group Ltd (trading as G-Labs)</strong><br>
+            Project Lead: Garry Goodchild<br>
+            Date: May 2026 (Project Start)
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="col-id">ID</th>
+                <th class="col-risk">Risk Description</th>
+                <th class="col-prob">Prob.<br>(1-5)</th>
+                <th class="col-imp">Imp.<br>(1-5)</th>
+                <th class="col-rating">Rating</th>
+                <th class="col-mitigation">Mitigation Strategy</th>
+                <th class="col-owner">Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TECHNICAL RISKS -->
+            <tr>
+                <td colspan="7" class="category-header">Technical Risks</td>
+            </tr>
+            <tr>
+                <td class="col-id">T1</td>
+                <td><strong>Hardware Latency Failure:</strong> Custom Linux kernel fails to achieve sub-millisecond latency required for institutional-grade data processing.</td>
+                <td class="col-prob">3</td>
+                <td class="col-imp">5</td>
+                <td class="col-rating rating-high">15</td>
+                <td>
+                    - Iterative benchmarking against standard Windows stack.<br>
+                    - Fallback to "bare metal" FPGA acceleration if GPU kernel optimization hits a ceiling.<br>
+                    - Early prototyping phase (Months 1-2).
+                </td>
+                <td>Systems Eng.</td>
+            </tr>
+            <tr>
+                <td class="col-id">T2</td>
+                <td><strong>AI Model Hallucination:</strong> Llama 3 model generates false patterns in financial time-series data.</td>
+                <td class="col-prob">4</td>
+                <td class="col-imp">4</td>
+                <td class="col-rating rating-high">16</td>
+                <td>
+                    - Implement strict "Grounding" rules where AI output is cross-referenced with hard mathematical indicators (RSI, MACD).<br>
+                    - Use AI for <em>pattern recognition</em> only, not execution logic.<br>
+                    - Human-in-the-loop validation during Alpha testing.
+                </td>
+                <td>Data Scientist</td>
+            </tr>
+            <tr>
+                <td class="col-id">T3</td>
+                <td><strong>Data Ingestion Bottleneck:</strong> FIX Protocol stream overwhelms local hardware memory bandwidth.</td>
+                <td class="col-prob">2</td>
+                <td class="col-imp">4</td>
+                <td class="col-rating rating-med">8</td>
+                <td>
+                    - Implement "Edge-First" filtering to discard noise tick data before it reaches the GPU.<br>
+                    - Upgrade to higher bandwidth VRAM (NVIDIA RTX 4090/A6000) if initial benchmarks fail.
+                </td>
+                <td>Systems Eng.</td>
+            </tr>
+
+            <!-- COMMERCIAL / RESOURCE RISKS -->
+            <tr>
+                <td colspan="7" class="category-header">Commercial & Resource Risks</td>
+            </tr>
+            <tr>
+                <td class="col-id">C1</td>
+                <td><strong>Recruitment Delay:</strong> Inability to hire 2 specialist technical staff (Systems Eng, Data Scientist) within the first 2 months.</td>
+                <td class="col-prob">3</td>
+                <td class="col-imp">5</td>
+                <td class="col-rating rating-high">15</td>
+                <td>
+                    - <strong>Mitigation:</strong> Operations & QA Lead role is already filled internally (Director), reducing recruitment burden by 33%.<br>
+                    - <strong>Primary:</strong> Engage specialist recruiters immediately for the 2 technical roles.<br>
+                    - <strong>Contingency:</strong> Utilize contractors (short-term) if permanent hires are delayed.
+                </td>
+                <td>G. Goodchild</td>
+            </tr>
+            <tr>
+                <td class="col-id">C2</td>
+                <td><strong>Cash Flow Constraints:</strong> Grant is paid in arrears; initial hardware purchase strains company cash flow.</td>
+                <td class="col-prob">2</td>
+                <td class="col-imp">5</td>
+                <td class="col-rating rating-med">10</td>
+                <td>
+                    - Utilization of Director's Loan Account (DLA) to bridge initial funding gaps.<br>
+                    - Use of 0% hardware finance options to spread capital expenditure.<br>
+                    - Quarterly grant claims to ensure regular reimbursement.
+                </td>
+                <td>Director</td>
+            </tr>
+
+            <!-- REGULATORY / LEGAL RISKS -->
+            <tr>
+                <td colspan="7" class="category-header">Regulatory & Legal Risks</td>
+            </tr>
+            <tr>
+                <td class="col-id">R1</td>
+                <td><strong>FCA "Financial Advice" Trigger:</strong> Software is interpreted as providing automated financial advice requiring regulation.</td>
+                <td class="col-prob">2</td>
+                <td class="col-imp">5</td>
+                <td class="col-rating rating-med">10</td>
+                <td>
+                    - <strong>Strict Design Rule:</strong> The tool provides <em>analysis and data visualization</em>, never trade recommendations.<br>
+                    - Clear "General Investment Advice" disclaimers hard-coded into the UI.<br>
+                    - Legal review of user interface prior to Beta launch.
+                </td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td class="col-id">R2</td>
+                <td><strong>Data Licensing Violation:</strong> Unintentional breach of exchange data redistribution rules.</td>
+                <td class="col-prob">1</td>
+                <td class="col-imp">3</td>
+                <td class="col-rating rating-low">3</td>
+                <td>
+                    - System designed for "End User" local processing only.<br>
+                    - No rebroadcasting of data feeds.<br>
+                    - Users must input their own broker API keys (Bring Your Own Data model).
+                </td>
+                <td>Director</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        Confidential - Apex Pro Group Ltd (G-Labs) - Grant Application Appendix - Page 1 of 1
+    </div>
+
+</body>
+</html>

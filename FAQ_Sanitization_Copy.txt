@@ -1,0 +1,22 @@
+*** GRANT-SAFE FAQ REPLACEMENT TEXT ***
+
+1. What is the Institutional Cycle Explorer?
+The Institutional Cycle Explorer is our premier data visualization tool. It tracks algorithmic market cycles and identifies statistical pivot points using real-time data feeds, helping analysts understand market structure without relying on subjective interpretation.
+
+2. How do I access the educational video library?
+All active subscribers receive access to our comprehensive video library. These tutorials cover platform setup, data interpretation, and advanced risk management protocols. You can find them in your Member Dashboard under "Educational Resources."
+
+3. Do you offer software for risk management?
+Yes. Our "Risk Management Console" is designed to help users calculate position sizing, exposure limits, and statistical probabilities. It emphasizes disciplined data analysis over speculative decision-making.
+
+4. Can I use G-Labs software on any device?
+Our web-based dashboards are accessible from any browser. For specific desktop applications (like our advanced charting tools), we provide installation guides for Windows and Mac environments.
+
+5. How do I renew my subscription?
+Subscriptions can be managed directly through the "My Account" section. You can choose monthly or annual plans depending on your research needs. For institutional or multi-user licenses, please contact our support team.
+
+6. Is this software suitable for beginners?
+Yes. G-Labs is an "Educational Technology" platform first. We provide the tools and training to take a user from novice to competent analyst. However, we always recommend users start with our "Foundations of Market Analysis" video series.
+
+7. What happens if I need technical support?
+We offer dedicated email support for all users. If you encounter setup issues or need clarification on a tool's function, simply submit a ticket via the "Contact Us" page.

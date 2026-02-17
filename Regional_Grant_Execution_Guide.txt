@@ -1,0 +1,51 @@
+# How to Secure Regional "Growth Hub" Grants (Option 5)
+**Date:** February 2026
+**Status:** Actionable
+
+Regional grants are often easier to win than national Innovate UK grants because the competition is lower (you are only competing with locals, not the whole UK).
+
+## 1. The "Magic Words" to Search
+The funding landscape changed in 2025. The key keyword is no longer just "European Regional Development Fund" (ERDF) but **"UK Shared Prosperity Fund" (UKSPF)**.
+
+**Google this now:**
+> `[Your City/County] business support UKSPF`
+> `[Your City/County] growth hub digital grant`
+
+## 2. Your Local Hubs (Harwich / Essex)
+Since you are in **Harwich (Tendring District)**, you have two specific targets.
+
+### Target A: Essex County Council (The "Creative" Route)
+**URGENT DEADLINE:** There is a live grant closing **16 February 2026**.
+*   **Name:** Creative Industries Project Development Fund
+*   **Grant Size:** £2,500 - £30,000
+*   **Why it fits:** "Software and Computer Services" are officially defined as Creative Industries by the UK Government (DCMS). You can pitch G-Labs as a "Digital Creative Platform for Financial Education".
+*   **Link:** [https://culture-essex.co.uk/creative-industries-project-development-fund/](https://culture-essex.co.uk/creative-industries-project-development-fund/)
+*   **Action:** Go to the link immediately. You have ~2 weeks.
+
+### Target B: Tendring District Council (The "Business" Route)
+*   **Hub Name:** Tendring4Growth
+*   **Website:** [https://www.tendringdc.gov.uk/content/ukspf](https://www.tendringdc.gov.uk/content/ukspf)
+*   **Email:** tendring4growth@tendringdc.gov.uk
+*   **Status:** The 2025/26 round is ending (money must be spent by March 31, 2026).
+*   **Strategy:** Email them **today** and ask: *"I am a Harwich-based tech business. Do you have any underspend from the 2025/26 UKSPF allocation that needs to be allocated before March 31st? I have a 'shovel-ready' digital project."* (Councils often panic-spend leftover money in Feb/March).
+
+### Target C: Backing Essex Business (Support & Loans)
+*   **Offer:** 12 hours free expert business advice + access to loans.
+*   **Link:** [https://backingessexbusiness.co.uk/](https://backingessexbusiness.co.uk/)
+
+
+## 3. What to Ask Them
+Once you find their website or phone number, do not just ask "Do you have money?". Ask specifically:
+
+> "I am a local software business. Do you have any active **Digital Growth Vouchers** or **Innovation Vouchers** funded by the **UK Shared Prosperity Fund**?"
+
+## 4. Typical Grants Available (Examples)
+*   **Digital Growth Grant:** £1,000 - £5,000 to buy new hardware (laptops, servers) or pay for a consultant (marketing/SEO).
+*   **Low Carbon / Net Zero Grant:** If your software helps reduce carbon (e.g., efficient code, remote work tools), you can sometimes claim £5k.
+*   **Innovation Vouchers:** £5,000 match-funding to work with a local university.
+
+## 5. Next Steps
+1.  **Tell me your location** (City or County) in the chat, and I will find the direct link for you.
+2.  **Prepare a "Shopping List":** These grants are usually for *buying things*.
+    *   List 3 things you need to buy (e.g., "High-performance workstation for AI training", "Professional SEO Agency contract", "Software Licenses").
+    *   Get 3 quotes for each (they usually require 3 quotes to prove value for money).

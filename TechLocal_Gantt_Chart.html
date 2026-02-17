@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Gantt Chart</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            max-width: 297mm; /* A4 Landscape width approx */
+            margin: 0 auto;
+            background: white;
+        }
+        .header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 24px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #004494;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            vertical-align: middle;
+        }
+        .task-col {
+            width: 30%;
+            font-weight: bold;
+        }
+        .month-col {
+            width: 10%;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        
+        /* Gantt Bars */
+        .bar-container {
+            height: 20px;
+            background-color: #eee;
+            border-radius: 10px;
+            position: relative;
+        }
+        .bar {
+            height: 100%;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .wp1 { background-color: #d9534f; left: 5%; width: 30%; } /* Month 1-2 */
+        .wp2 { background-color: #f0ad4e; left: 35%; width: 45%; } /* Month 3-5 */
+        .wp3 { background-color: #5cb85c; left: 80%; width: 15%; } /* Month 6 */
+        
+        .milestone {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Appendix: Project Plan & Gantt Chart (6 Months)</h1>
+        <h2>Project: Apex Pro Group Ltd (G-Labs) Localized HPC Node</h2>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="task-col">Work Package / Activity</th>
+                <th class="month-col">Month 1<br>(May)</th>
+                <th class="month-col">Month 2<br>(Jun)</th>
+                <th class="month-col">Month 3<br>(Jul)</th>
+                <th class="month-col">Month 4<br>(Aug)</th>
+                <th class="month-col">Month 5<br>(Sep)</th>
+                <th class="month-col">Month 6<br>(Oct)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- WP1 -->
+            <tr>
+                <td colspan="7" style="background-color: #e9ecef; font-weight: bold;">WP1: Hardware Architecture & Benchmarking (Lead: Systems Engineer)</td>
+            </tr>
+            <tr>
+                <td>Procurement of Hardware (RTX 4090s)</td>
+                <td style="background-color: #d9534f;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Custom Linux Kernel Build</td>
+                <td style="background-color: #d9534f;"></td>
+                <td style="background-color: #d9534f;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thermal & Stress Testing</td>
+                <td></td>
+                <td style="background-color: #d9534f;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Milestone 1: Hardware Stable</strong></td>
+                <td></td>
+                <td style="text-align: center;">&#9733;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- WP2 -->
+            <tr>
+                <td colspan="7" style="background-color: #e9ecef; font-weight: bold;">WP2: Software Bridge & Model Optimization (Lead: AI Engineer)</td>
+            </tr>
+            <tr>
+                <td>C++ Bridge Development (FIX API)</td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Llama 3 Model Fine-Tuning</td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Data Cleaning & Unit Tests (Junior Dev)</td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Latency Optimization (Zero-Copy)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td style="background-color: #f0ad4e;"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Milestone 2: Software Beta</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align: center;">&#9733;</td>
+                <td></td>
+            </tr>
+
+            <!-- WP3 -->
+            <tr>
+                <td colspan="7" style="background-color: #e9ecef; font-weight: bold;">WP3: Integration & Testing (Lead: Garry Goodchild)</td>
+            </tr>
+            <tr>
+                <td>Full System Integration</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #5cb85c;"></td>
+            </tr>
+            <tr>
+                <td>Live Market Simulation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #5cb85c;"></td>
+            </tr>
+            <tr>
+                <td>Regression Testing (Ops & QA Lead)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #5cb85c;"></td>
+            </tr>
+            <tr>
+                <td>Final Report & Case Study</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="background-color: #5cb85c;"></td>
+            </tr>
+            <tr>
+                <td><strong>Milestone 3: Project Complete</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align: center;">&#9733;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px; border: 1px solid #ddd; padding: 15px; background: #f9f9f9;">
+        <h3>Risk Management (Key Dependencies)</h3>
+        <ul>
+            <li><strong>Hardware Delays:</strong> Procurement is scheduled for Month 1 (May) to ensure hardware is onsite before extensive coding begins.</li>
+            <li><strong>Recruitment:</strong> Job ads for all 3 roles will be placed immediately upon grant award notification (April) to ensure staff start in May.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

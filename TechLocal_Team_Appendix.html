@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team & Skills Matrix</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+        }
+        .header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 24px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .profile {
+            display: flex;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .profile-icon {
+            width: 60px;
+            height: 60px;
+            background: #0056b3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .profile-content {
+            flex-grow: 1;
+        }
+        .role-title {
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .person-name {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .skills-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+        
+        .org-chart {
+            text-align: center;
+            margin-top: 40px;
+            border-top: 2px solid #eee;
+            padding-top: 30px;
+        }
+        .chart-box {
+            display: inline-block;
+            border: 2px solid #0056b3;
+            padding: 10px 20px;
+            border-radius: 4px;
+            background: white;
+            margin: 0 10px;
+            width: 150px;
+            vertical-align: top;
+        }
+        .connector {
+            width: 2px;
+            height: 20px;
+            background: #0056b3;
+            margin: 0 auto;
+        }
+        .horizontal-line {
+            width: 360px;
+            height: 2px;
+            background: #0056b3;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Appendix: Team Structure & Skills Matrix</h1>
+        <h2>Project: Apex Pro Group Ltd (G-Labs) Localized HPC Node</h2>
+    </div>
+
+    <!-- Director Profile -->
+    <div class="profile">
+        <div class="profile-icon">GG</div>
+        <div class="profile-content">
+            <div class="person-name">Garry Goodchild</div>
+            <div class="role-title">Project Lead & Commercial Director</div>
+            <p style="font-size: 13px; margin-bottom: 10px;">
+                Founder of Apex Pro Group Ltd with extensive experience in the retail financial markets. 
+                Responsible for the strategic direction of the G-Labs product suite and defining the commercial use-cases for the AI technology.
+            </p>
+            <ul class="skills-list">
+                <li><strong>Strategic Leadership:</strong> 10+ years in business management and software commercialization.</li>
+                <li><strong>Domain Expertise:</strong> Deep understanding of financial market structure, technical analysis, and trader psychology.</li>
+                <li><strong>Product Management:</strong> Successfully launched "Market Data Collection & Analysis Tools".</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hire 1 Profile -->
+    <div class="profile" style="border-left: 4px solid #d9534f;">
+        <div class="profile-icon" style="background: #d9534f;">SE</div>
+        <div class="profile-content">
+            <div class="person-name">Senior Systems Engineer (To Be Recruited)</div>
+            <div class="role-title">Lead Technical Architect</div>
+            <p style="font-size: 13px; margin-bottom: 10px;">
+                This role requires a specialist in low-latency hardware optimization. They will be responsible for building the custom Linux kernel and optimizing the GPU drivers.
+            </p>
+            <ul class="skills-list">
+                <li><strong>Core Tech:</strong> C++, CUDA, Rust, Linux Kernel Optimization.</li>
+                <li><strong>Hardware:</strong> NVIDIA RTX Architecture, PCIE Bus Latency reduction.</li>
+                <li><strong>Focus:</strong> Ensuring the "Edge Node" runs faster than cloud alternatives.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hire 2 Profile -->
+    <div class="profile" style="border-left: 4px solid #5cb85c;">
+        <div class="profile-icon" style="background: #5cb85c;">DS</div>
+        <div class="profile-content">
+            <div class="person-name">Data Scientist / AI Engineer (To Be Recruited)</div>
+            <div class="role-title">Algorithm Developer</div>
+            <p style="font-size: 13px; margin-bottom: 10px;">
+                This role focuses on the application layer—taking the raw speed provided by the Systems Engineer and turning it into intelligent market analysis.
+            </p>
+            <ul class="skills-list">
+                <li><strong>Core Tech:</strong> Python, PyTorch, TensorFlow, Hugging Face Transformers.</li>
+                <li><strong>AI Models:</strong> Fine-tuning Llama 3 / Mistral for financial time-series data.</li>
+                <li><strong>Focus:</strong> Creating the "Brain" of the local node.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hire 3 Profile (New) -->
+    <div class="profile" style="border-left: 4px solid #f0ad4e;">
+        <div class="profile-icon" style="background: #f0ad4e;">QA</div>
+        <div class="profile-content">
+            <div class="person-name">Operations & QA Lead (Internal / Director)</div>
+            <div class="role-title">Testing, Data & Compliance</div>
+            <p style="font-size: 13px; margin-bottom: 10px;">
+                Responsible for managing data cleaning pipelines, conducting manual regression testing, and ensuring GDPR compliance of local datasets.
+            </p>
+            <ul class="skills-list">
+                <li><strong>Core Tech:</strong> Data Analysis (Excel/SQL), Process Management, Testing Methodologies.</li>
+                <li><strong>Focus:</strong> Data integrity, Quality Assurance, and Compliance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Org Chart -->
+    <div class="org-chart">
+        <h3>Project Reporting Structure</h3>
+        <div class="chart-box" style="margin-bottom: 0;">
+            <strong>Garry Goodchild</strong><br>
+            <span style="font-size: 12px;">Project Lead</span>
+        </div>
+        <div class="connector"></div>
+        <div class="horizontal-line"></div>
+        <div style="display: flex; justify-content: center; margin-top: 0;">
+            <div style="text-align: center;">
+                <div class="connector"></div>
+                <div class="chart-box" style="border-color: #d9534f;">
+                    <strong>Systems Engineer</strong><br>
+                    <span style="font-size: 12px;">Technical Lead</span>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div class="connector"></div>
+                <div class="chart-box" style="border-color: #5cb85c;">
+                    <strong>AI Engineer</strong><br>
+                    <span style="font-size: 12px;">Algorithm Lead</span>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div class="connector"></div>
+                <div class="chart-box" style="border-color: #f0ad4e;">
+                    <strong>Ops & QA Lead</strong><br>
+                    <span style="font-size: 12px;">QA & Testing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

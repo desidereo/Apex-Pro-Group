@@ -1,0 +1,72 @@
+# Alternative Funding Strategy: Beyond Innovate UK
+**For: G-Labs**
+**Date:** February 2026
+
+While Innovate UK is the "Gold Standard" for R&D grants, it is highly competitive. Diversifying your funding sources is critical for survival and growth. Below are the best non-Innovate UK options for a UK-based software/fintech company.
+
+---
+
+## 1. Government-Backed Start Up Loans (Debt Finance)
+**Best For:** Immediate cash flow, marketing budget, or bridging the gap while waiting for grants.
+*   **What is it?** A personal loan for business purposes, backed by the UK government.
+*   **Amount:** Up to **£25,000 per director** (max £100,000 for 4 partners).
+*   **Interest Rate:** Fixed at **6%** per annum (lower than most commercial bank loans).
+*   **Terms:** Repay over 1–5 years. No early repayment fees.
+*   **Pros:** High approval rate compared to grants; includes 12 months of free mentoring.
+*   **Cons:** You are personally liable (it is a personal loan used for business).
+*   **Eligibility:** Business trading for less than 3 years.
+*   **Action:** Apply via the [British Business Bank](https://www.startuploans.co.uk/).
+
+## 2. R&D Tax Credits (SME Scheme)
+**Best For:** Recovering cash from money you have *already spent* on development.
+*   **What is it?** A corporation tax relief that can either reduce your tax bill or result in a **cash payment** from HMRC.
+*   **Value:** You can recover up to **18.6% to 27%** of your qualifying R&D costs.
+*   **Qualifying Costs:** 
+    *   Staff salaries (developers, you).
+    *   Subcontractors/Freelancers (up to 65% of their cost).
+    *   Software licenses.
+    *   Cloud computing costs (AWS, Azure, etc.).
+*   **Criteria:** You must be solving a "scientific or technological uncertainty."
+    *   *Not R&D:* "We built a website."
+    *   *Is R&D:* "We developed a novel neural network algorithm to detect market divergence in real-time with <10ms latency."
+*   **Action:** Speak to your accountant immediately. You can claim for the last 2 financial years.
+
+## 3. Fintech Accelerators (Equity Investment)
+**Best For:** High-growth scaling, networking, and mentorship.
+*   **What is it?** Intensive 3-6 month programs where you get cash + office space + mentorship in exchange for equity (shares).
+*   **Top UK Fintech Accelerators:**
+    *   **Barclays Rise:** Specifically for fintech. Connects you with bank decision-makers.
+    *   **Techstars London:** Global prestige. Very competitive.
+    *   **Antler / Entrepreneur First:** Good if you are looking for co-founders or pre-seed capital.
+    *   **Founders Factory:** Corporate-backed (e.g., Aviva), good for B2B partnerships.
+*   **Pros:** Instant credibility, huge network effects.
+*   **Cons:** You give away shares (typically 5-10%).
+
+## 4. SEIS / EIS (Angel Investment Incentives)
+**Best For:** Attracting private investors (Angels, Friends & Family).
+*   **What is it?** You don't get money from the government, but the **government gives your investors huge tax breaks**, making it much easier for you to raise money.
+*   **SEIS (Seed Enterprise Investment Scheme):**
+    *   For early-stage companies (under £200k gross assets).
+    *   investors get **50% tax relief**. If they invest £10,000, they get £5,000 off their tax bill.
+    *   Risk-free for them: heavy loss relief if you fail.
+*   **EIS (Enterprise Investment Scheme):**
+    *   For larger raises (up to £5m).
+    *   30% tax relief for investors.
+*   **Action:** Apply for "Advance Assurance" from HMRC. Having this certificate makes you 10x more attractive to investors.
+
+## 5. Regional "Growth Hub" Grants
+**Best For:** Small capital purchases (laptops, servers) or consultancy/training.
+*   **What is it?** Local councils often have "pots" of money (e.g., UK Shared Prosperity Fund) to boost local business.
+*   **Typical Grants:** £1,000 - £5,000 matched funding (you pay 50%, they pay 50%).
+*   **Action:** Search for "[Your County/City] Growth Hub" (e.g., "Manchester Growth Hub", "Heart of the South West Growth Hub").
+
+---
+
+## Summary of Recommendations
+
+| Option | Speed | Difficulty | Cost | Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| **Start Up Loan** | Fast (2-4 weeks) | Low | 6% Interest | **Do this first** for immediate cash injection. |
+| **R&D Tax Credits** | Medium (months) | Medium | Accountant Fees | **Do this annually**. It's "free" money for work done. |
+| **SEIS Investment** | Slow (3-6 months) | High | Equity (Shares) | **Start Advance Assurance** now to be ready for investors. |
+| **Accelerators** | Fixed Dates | Very High | Equity (Shares) | **Apply** if you want to scale globally fast. |

@@ -1,0 +1,67 @@
+# Customer "Win-Back" Communication Strategy
+**Goal:** Convert cancelled TradingView subscribers back to paying members *before* or *immediately after* removing their access.
+
+**Concept:** Do not just "remove access." Use the removal as a trigger event to make a special offer.
+
+---
+
+### Template 1: The "Service Interruption Warning" (Send 48 hours BEFORE removing access)
+**Subject:** Action Required: Your G-Labs Access is expiring in 48 hours
+**Medium:** Email / TradingView Private Message / Telegram DM
+
+Hi [Name],
+
+I noticed your G-Labs subscription has been cancelled. To ensure fair access for all members, our system is scheduled to remove your access to the [Indicator Name/Package] on **TradingView** in 48 hours.
+
+I’d hate for you to lose your edge in the markets right now. We’ve recently updated the tools with [mention a new feature, e.g., "new Order Block detection" or "Prop Firm Risk settings"] that you might haven't seen yet.
+
+**Want to stay?**
+I’ve set up a special "Loyalty Link" for you to reactivate at our legacy rate (or get a discount):
+👉 [Insert Link to Stripe/Payment Page with Discount]
+
+If you’ve moved on, no worries at all! I’ll proceed with removing access on [Day/Time]. You can always rejoin later at the standard price.
+
+Best trading,
+Garry
+G-Labs Team
+
+---
+
+### Template 2: The "Access Removed" Notification (Send IMMEDIATELY AFTER removing access)
+**Subject:** Update on your G-Labs TradingView Access
+**Medium:** Email / TradingView Private Message
+
+Hi [Name],
+
+Just a quick heads-up that your access to the G-Labs indicators on TradingView has now been deactivated as your subscription period has ended.
+
+If you open your charts and see "Access Denied" errors, this is why—don't panic, your charts are fine, just the G-Labs overlays have been paused.
+
+**Did you cancel by mistake?**
+It happens! If you want to jump back in, use this link to reactivate instant access:
+👉 [Insert Link]
+
+**Free Resource:**
+Even if you aren't subscribing right now, I want to make sure you keep winning. Here is a free copy of our **"Smart Money Concepts Manual"** to help with your manual analysis:
+[Insert Link to PDF Download]
+
+Keep crushing it!
+
+Garry
+
+---
+
+### Strategy for Manual Removal
+Since you have to do this manually, use it to your advantage:
+1.  **Batch Process:** Do them all at once on a Friday afternoon or Monday morning.
+2.  **The "Personal Touch":** Because you are doing it manually, you can actually send a personal DM on TradingView.
+    *   *Message:* "Hey [Username], just auditing the access list. Saw your sub was cancelled so I have to remove the access today. Hope the tools served you well! If you ever want back in, hit me up for a discount code. Cheers, Garry."
+3.  **Why this works:** It's not a "bot" banning them. It's a human. They might reply: "Oh wait, my card expired! I didn't mean to cancel! How do I pay?" -> **Boom, recovered sale.**
+
+### Where to manage this list?
+Create a simple Excel/Google Sheet:
+*   **Column A:** TradingView Username
+*   **Column B:** Expiry Date
+*   **Column C:** Status (Active / Cancelled / Warning Sent / Removed)
+
+Don't just delete them. Mark them as "Removed" so you have a list of "warm leads" to email in 3 months with a "We miss you" offer.
