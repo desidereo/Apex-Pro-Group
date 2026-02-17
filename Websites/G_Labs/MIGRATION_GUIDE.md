@@ -100,7 +100,28 @@ This list is exactly what you need to manually grant access or move them to a ne
 
 ---
 
-## 3. Automating the Content Migration
+## 3. The "Nuclear" Option: XML Export (Best for missing data)
+
+If the CSV export is confusing or missing fields, use this method. It dumps **everything** from your database, and I can extract the hidden ID for you.
+
+1.  **Go to Tools > Export.**
+2.  Select **"All content"**.
+3.  Click **Download Export File**.
+4.  It will save as an `.xml` file (e.g., `g-labs-software.wordpress.2023-10-27.xml`).
+5.  **Move this file** to `Websites/G_Labs/Legacy_Backup/`.
+
+### Running the Extractor:
+I have created a script called `extract_from_xml.py` that reads this backup file.
+
+1.  Open your terminal in `Websites/G_Labs/`.
+2.  Run: `python extract_from_xml.py`
+3.  It will scan your backup and list all possible field names (like `_billing_tradingview_id` or `custom_checkout_field`).
+4.  **Type the number** of the correct field.
+5.  It will save a clean list to `customer_access_list_from_xml.csv`.
+
+---
+
+## 4. Automating the Content Migration
 
 I have created a script called `import_products.py` in this folder.
 
