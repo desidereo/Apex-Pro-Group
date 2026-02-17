@@ -41,8 +41,12 @@ Data is often split between **Orders** (one-time) and **Subscriptions** (recurri
    - You should be on the **"Export Now"** tab (this is the default).
    - **Scroll down.** You might see sections like "Filter by order date" or "Filter by order status". If you don't see them, don't worry—the default is usually fine.
    - **Crucial Step:** Scroll down to the **"Set up fields to export"** section.
-     - On the right side, look for **"Custom Fields"** (you might need to click to expand it).
-     - Drag fields like `tradingview_id`, `username`, or `_billing_woocmr_custom_field` from the right side into the list on the left.
+     - **If you used a "Custom Checkout Fields" plugin:**
+       - Look on the right side for a section called **"Billing Address"** or **"Custom Fields"**.
+       - Search (Ctrl+F) for the name of your field, like `tradingview` or `id`.
+       - It often looks like: `billing_tradingview_id`, `checkout_field_1`, or just `TradingView ID`.
+     - Drag that field from the right side into the list on the left.
+     - **Tip:** Click the **"Preview"** button (at the top or bottom) to see 10 rows. Check if the "TradingView" column has data!
    - Click the **Export** button at the bottom and save as `orders.csv`.
 
 3. **Export 2: Subscriptions (If you have them)**
