@@ -49,11 +49,15 @@ Data is often split between **Orders** (one-time) and **Subscriptions** (recurri
      - **Tip:** Click the **"Preview"** button (at the top or bottom) to see 10 rows. Check if the "TradingView" column has data!
    - Click the **Export** button at the bottom and save as `orders.csv`.
 
-3. **Export 2: Subscriptions (If you have them)**
-   - Stay on the same page.
-   - If you have a "Filter by Post Type" section, change it to **Subscriptions**.
-   - If you don't see "Subscriptions" options, just skip this step (you likely only have standard orders).
-   - Click **Export** and save as `subscriptions.csv`.
+3. **Export 2: Subscriptions (Recurring Payments)**
+   - **Check the "Post Type" Dropdown:** At the very top of the "Export Now" tab, look for a dropdown labeled "Post Type" (it usually says "Orders" by default).
+   - Click it and look for **"Subscriptions"**.
+   - **If you select "Subscriptions":**
+     - Ensure you still drag your **TradingView ID** custom field into the export list (it resets when you change post types!).
+     - Click **Export** and save as `subscriptions.csv`.
+   - **If you DO NOT see "Subscriptions":**
+     - You might be using a different plugin or just have them mixed in with Orders.
+     - In this case, your `orders.csv` from Step 3 likely contains everything. Just double-check that file!
 
 4. **Move Files:** Place both `orders.csv` and `subscriptions.csv` into `Websites/G_Labs/Legacy_Backup/`.
 
