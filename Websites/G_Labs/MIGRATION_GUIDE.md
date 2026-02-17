@@ -1,5 +1,22 @@
 # WordPress to G-Labs Migration Guide
 
+## 0. Accessing Your WordPress Admin
+Before you can export, you need to log in. If you have forgotten your password, use **Method B**.
+
+**Method A: Direct Link (Easiest)**
+1.  Go to `www.g-labs.software/wp-admin` (or `www.g-labs.software/wp-login.php`).
+2.  Enter your username and password.
+
+**Method B: Via Hosting (Namecheap/cPanel)**
+1.  Log in to your Namecheap Dashboard.
+2.  Go to **Hosting List** -> **Go to cPanel**.
+3.  Scroll down to the bottom to **WordPress Manager by Softaculous** (or just "Softaculous Apps Installer").
+4.  Click the **WordPress** icon.
+5.  Scroll down to "Current Installations".
+6.  Click the **"Login"** (Person Icon) next to your website. **This logs you in automatically as Admin without needing a password.**
+
+---
+
 This guide will help you safely extract all your critical data (Products, Customers, Orders) from your existing WordPress/WooCommerce site before you replace it with the new G-Labs platform.
 
 ## 1. Export Your Data (Do this immediately)
