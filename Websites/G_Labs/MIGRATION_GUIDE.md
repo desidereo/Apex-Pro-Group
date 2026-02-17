@@ -31,19 +31,27 @@ Since you plan to delete the old site, you must secure your data first.
 5. Click **Generate CSV**.
 6. **Save this file** to `Websites/G_Labs/Legacy_Backup/products.csv`.
 
-### B. Export Orders & TradingView Usernames (CRITICAL)
-Standard WooCommerce export often **hides** custom fields like "TradingView Username". You need a specific plugin to get this.
+### B. Export Orders & Subscriptions (CRITICAL)
+Data is often split between **Orders** (one-time) and **Subscriptions** (recurring). You need to export **BOTH** to ensure you don't miss any active users.
 
 1. **Install Plugin:** Go to Plugins > Add New > Search for **"Advanced Order Export For WooCommerce"** (free version). Install & Activate.
-2. **Configure Export:**
+
+2. **Export 1: Standard Orders**
    - Go to **WooCommerce > Export Orders**.
-   - In the **"Set up fields to export"** section (at the bottom):
-     - Look for the **"Custom Fields"** or **"Item Metadata"** tab on the right side.
-     - Find the field labeled `tradingview_id`, `username`, `checkout_field_1` (or whatever you named it on your form).
-     - **Drag that field** into the export list on the left.
-   - Ensure "Billing Email", "Billing Name", and "Order Items" are also in the list.
-3. **Export:** Click **"Export"** (CSV format).
-4. **Save this file** to `Websites/G_Labs/Legacy_Backup/orders.csv`.
+   - In the **"Filter data"** section (top), ensure "Post Type" is set to **Orders**.
+   - In the **"Set up fields to export"** section (bottom):
+     - Look for **"Custom Fields"** or **"Item Metadata"** on the right.
+     - Drag fields like `tradingview_id`, `username`, or `_billing_woocmr_custom_field` into the list.
+   - Click **Export** and save as `orders.csv`.
+
+3. **Export 2: Subscriptions (If you have them)**
+   - Stay on the same "Export Orders" page.
+   - In the **"Filter data"** section, change "Post Type" to **Subscriptions**.
+   - *Note: If you don't see "Subscriptions", you might not have the Subscriptions plugin active, or you only have standard orders.*
+   - Ensure the same **Custom Fields** (TradingView ID) are in the export list.
+   - Click **Export** and save as `subscriptions.csv`.
+
+4. **Move Files:** Place both `orders.csv` and `subscriptions.csv` into `Websites/G_Labs/Legacy_Backup/`.
 
 ### C. Export Customers (WooCommerce)
 1. Go to **Users > All Users** (or use the Order Export plugin above).

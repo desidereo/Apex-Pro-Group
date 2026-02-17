@@ -1,17 +1,40 @@
 import csv
 import os
 
-INPUT_FILE = 'Legacy_Backup/orders.csv'
+ORDERS_FILE = 'Legacy_Backup/orders.csv'
+SUBS_FILE = 'Legacy_Backup/subscriptions.csv'
 OUTPUT_FILE = 'Legacy_Backup/customer_access_list.csv'
 
-def main():
-    if not os.path.exists(INPUT_FILE):
-        print(f"Error: {INPUT_FILE} not found.")
-        print("Please export your orders including Custom Fields to this location.")
+def get_input_file():
+    files = []
+    if os.path.exists(ORDERS_FILE): files.append(ORDERS_FILE)
+    if os.path.exists(SUBS_FILE): files.append(SUBS_FILE)
+    
+    if not files:
+        print(f"Error: Neither {ORDERS_FILE} nor {SUBS_FILE} found.")
+        print("Please export your orders/subscriptions to these locations.")
         print("Refer to MIGRATION_GUIDE.md Step 1B.")
-        return
+        return None
+        
+    print("Found files:")
+    for i, f in enumerate(files):
+        print(f"{i+1}: {f}")
+        
+    sel = input("Which file do you want to extract from? (Enter number): ")
+    try:
+        idx = int(sel) - 1
+        if 0 <= idx < len(files):
+            return files[idx]
+    except:
+        pass
+    print("Invalid selection.")
+    return None
 
-    print("Reading orders...")
+def main():
+    INPUT_FILE = get_input_file()
+    if not INPUT_FILE: return
+
+    print(f"Reading {INPUT_FILE}...")
     
     # Using utf-8-sig to handle Excel BOM if present
     try:
@@ -35,7 +58,7 @@ def main():
         
     print("\n------------------------------------------------")
     print("Look at the list above. Which column number contains the TradingView Username?")
-    print("(Common names might be: 'TradingView ID', 'checkout_field_1', 'order_notes', 'Customer Note')")
+    print("(Common names might be: 'TradingView ID', 'checkout_field_1', 'order_notes', 'Customer Note', '_billing_woocmr_custom_field')")
     
     col_input = input("Enter the NUMBER of the column (e.g., 5): ")
     
