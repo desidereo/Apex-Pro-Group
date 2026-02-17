@@ -38,17 +38,17 @@ Data is often split between **Orders** (one-time) and **Subscriptions** (recurri
 
 2. **Export 1: Standard Orders**
    - Go to **WooCommerce > Export Orders**.
-   - In the **"Filter data"** section (top), ensure "Post Type" is set to **Orders**.
-   - In the **"Set up fields to export"** section (bottom):
-     - Look for **"Custom Fields"** or **"Item Metadata"** on the right.
-     - Drag fields like `tradingview_id`, `username`, or `_billing_woocmr_custom_field` into the list.
-   - Click **Export** and save as `orders.csv`.
+   - You should be on the **"Export Now"** tab (this is the default).
+   - **Scroll down.** You might see sections like "Filter by order date" or "Filter by order status". If you don't see them, don't worry—the default is usually fine.
+   - **Crucial Step:** Scroll down to the **"Set up fields to export"** section.
+     - On the right side, look for **"Custom Fields"** (you might need to click to expand it).
+     - Drag fields like `tradingview_id`, `username`, or `_billing_woocmr_custom_field` from the right side into the list on the left.
+   - Click the **Export** button at the bottom and save as `orders.csv`.
 
 3. **Export 2: Subscriptions (If you have them)**
-   - Stay on the same "Export Orders" page.
-   - In the **"Filter data"** section, change "Post Type" to **Subscriptions**.
-   - *Note: If you don't see "Subscriptions", you might not have the Subscriptions plugin active, or you only have standard orders.*
-   - Ensure the same **Custom Fields** (TradingView ID) are in the export list.
+   - Stay on the same page.
+   - If you have a "Filter by Post Type" section, change it to **Subscriptions**.
+   - If you don't see "Subscriptions" options, just skip this step (you likely only have standard orders).
    - Click **Export** and save as `subscriptions.csv`.
 
 4. **Move Files:** Place both `orders.csv` and `subscriptions.csv` into `Websites/G_Labs/Legacy_Backup/`.
