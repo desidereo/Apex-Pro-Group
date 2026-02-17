@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 4. Send Email
     if (mail($recipient, $email_subject, $email_content, $email_headers)) {
         // Success
-        header("Location: index.html?status=success#contact");
+        header("Location: index.html?status=success#contact-section");
     } else {
         // Server Error
-        header("Location: index.html?status=server_error#contact");
+        header("Location: index.html?status=server_error#contact-section");
     }
 
 } else {

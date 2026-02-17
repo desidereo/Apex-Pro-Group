@@ -328,6 +328,57 @@
             display: block;
         }
 
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: #333;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 60px;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 11px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #0a0b10;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+        }
+        .timeline-date {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .timeline-content h3 {
+            color: #fff;
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+        .timeline-content p {
+            color: #aaa;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
@@ -345,7 +396,9 @@
             <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#technology">Technology</a>
-                <a href="#contact">R&D Team</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#team">R&D Team</a>
+                <a href="#contact-section">Contact</a>
             </nav>
         </div>
     </header>
@@ -354,7 +407,7 @@
         <div class="container hero-content">
             <h1>Decentralized High-Performance Computing for Financial Markets.</h1>
             <p class="hero-sub">Apex Pro Group develops edge-first infrastructure and algorithmic solutions that bridge the gap between institutional latency and retail accessibility.</p>
-            <a href="#contact" class="btn">CONTACT R&D</a>
+            <a href="#contact-section" class="btn">CONTACT R&D</a>
         </div>
     </section>
 
@@ -415,6 +468,55 @@
         </div>
     </section>
 
+    <section id="roadmap" style="background: #0a0b10; padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">Strategic Roadmap</h2>
+            <div class="timeline">
+                
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Q2 2026 (May - Jun)</div>
+                    <div class="timeline-content">
+                        <h3>Infrastructure & Hardware Architecture</h3>
+                        <p>Procurement of NVIDIA RTX workstations and custom Linux kernel optimization for ultra-low latency data processing. Benchmarking of local "Edge Node" performance against cloud standards.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Q3 2026 (Jul - Sep)</div>
+                    <div class="timeline-content">
+                        <h3>Software Bridge Development</h3>
+                        <p>Development of C++ / Python bridge to connect institutional data feeds (FIX API) directly to local Neural Networks (Llama-3) without external cloud dependency.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Q4 2026 (Oct - Dec)</div>
+                    <div class="timeline-content">
+                        <h3>Alpha Testing & Market Simulation</h3>
+                        <p>Live market data stress-testing. Verification of "Zero-Lag" inference capabilities during high-volatility events (NFP/FOMC).</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: var(--accent-color); box-shadow: 0 0 20px var(--accent-color);"></div>
+                    <div class="timeline-date" style="color: #fff;">2027</div>
+                    <div class="timeline-content">
+                        <h3 style="color: var(--accent-color);">Commercial Launch</h3>
+                        <p>Release of the "G-Labs AI Terminal" to early-access partners and retail SME investors.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="mission" style="padding: 80px 0; background: #fff;">
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
@@ -439,42 +541,6 @@
                     </div>
 
                     <div style="margin-top: 30px;">
-                        <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Contact Form</h4>
-                        <div id="status-box" class="status-message"></div>
-                        <form action="contact.php" method="POST" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">FULL NAME</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">EMAIL ADDRESS</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">SUBJECT</label>
-                                <select id="subject" name="subject" class="form-control">
-                                    <option value="General Inquiry">General Inquiry</option>
-                                    <option value="Research Collaboration">Research Collaboration</option>
-                                    <option value="Investment">Investment Relations</option>
-                                    <option value="Support">Technical Support</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">MESSAGE</label>
-                                <textarea id="message" name="message" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-submit">SEND MESSAGE</button>
-                        </form>
-                    </div>
-
-                    <div style="margin-top: 30px;">
-                        <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Direct Contact</h4>
-                        <p style="margin: 0;">
-                            <a href="mailto:support@apexprogroup.uk" style="color: var(--accent-color); text-decoration: none; font-weight: 600; font-size: 1.1rem;">support@apexprogroup.uk</a>
-                        </p>
-                    </div>
-
-                    <div style="margin-top: 30px;">
                         <h4 style="margin-bottom: 5px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Registration</h4>
                         <p style="margin: 0; color: #555;">Registered in England & Wales</p>
                         <p style="margin: 0; color: #555;">Company No. 13048804</p>
@@ -484,7 +550,77 @@
         </div>
     </section>
 
-    <footer id="contact">
+    <section id="team" style="background: #1a1c25; padding: 80px 0; border-top: 1px solid #333;">
+        <div class="container">
+            <h2 class="section-title">Leadership & Research</h2>
+            <div class="feature-grid">
+                <!-- Director -->
+                <div class="feature-card" style="border-left-color: #fff;">
+                    <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; color: #fff;">GG</div>
+                    <h3 style="margin-bottom: 5px;">Garry Goodchild</h3>
+                    <p style="color: var(--accent-color); font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Director & Lead Researcher</p>
+                    <p>Specializing in algorithmic market structure analysis and retail software commercialization. Leading the transition from static indicators to dynamic Edge AI.</p>
+                </div>
+                
+                <!-- Open Role 1 -->
+                <div class="feature-card" style="border-left-color: #333; opacity: 0.7;">
+                    <div style="width: 60px; height: 60px; border: 2px dashed #555; border-radius: 50%; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #777;">HIRING</div>
+                    <h3 style="margin-bottom: 5px;">Systems Engineer</h3>
+                    <p style="color: #777; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Hardware Architecture</p>
+                    <p>Open Role (Q2 2026). Focus: Custom Linux kernel optimization for NVIDIA RTX hardware and low-latency C++ bridge development.</p>
+                </div>
+
+                <!-- Open Role 2 -->
+                <div class="feature-card" style="border-left-color: #333; opacity: 0.7;">
+                    <div style="width: 60px; height: 60px; border: 2px dashed #555; border-radius: 50%; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #777;">HIRING</div>
+                    <h3 style="margin-bottom: 5px;">AI Data Scientist</h3>
+                    <p style="color: #777; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Machine Learning</p>
+                    <p>Open Role (Q2 2026). Focus: Fine-tuning Llama-3 models for financial time-series forecasting and sentiment analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" style="padding: 80px 0; background: #0a0b10;">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title" style="text-align: center;">Contact R&D</h2>
+            <p style="text-align: center; color: #aaa; margin-bottom: 40px;">Interested in our research or investment opportunities? Get in touch.</p>
+            
+            <div id="status-box" class="status-message"></div>
+            <form action="contact.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">SUBJECT</label>
+                    <select id="subject" name="subject" class="form-control">
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Research Collaboration">Research Collaboration</option>
+                        <option value="Investment">Investment Relations</option>
+                        <option value="Support">Technical Support</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit" style="width: 100%;">SEND MESSAGE</button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="color: #666;">
+                    Direct Email: <a href="mailto:support@apexprogroup.uk" style="color: var(--accent-color); text-decoration: none;">support@apexprogroup.uk</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
         <div class="container">
             <p>&copy; 2026 Apex Pro Group Ltd. All Rights Reserved.</p>
             <p style="margin-top: 20px; font-size: 0.8rem;">
