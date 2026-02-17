@@ -175,6 +175,81 @@
             font-size: 0.9rem;
         }
 
+        /* Server Node Animation */
+        .server-visual {
+            width: 100%;
+            height: 300px;
+            background: #111;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #333;
+            border-radius: 4px;
+        }
+
+        .server-rack {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 20px;
+            height: 100%;
+            box-sizing: border-box;
+            background: 
+                linear-gradient(90deg, transparent 49%, #222 50%, transparent 51%),
+                linear-gradient(transparent 49%, #222 50%, transparent 51%);
+            background-size: 20px 20px;
+        }
+
+        .server-unit {
+            height: 15px;
+            background: #1a1c25;
+            border: 1px solid #333;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .server-light {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #333;
+            margin-right: 4px;
+            box-shadow: 0 0 2px #333;
+        }
+
+        .server-light.active {
+            background: var(--accent-color);
+            box-shadow: 0 0 5px var(--accent-color);
+            animation: blink 0.5s infinite alternate;
+        }
+
+        .server-light.processing {
+            background: #0f0;
+            box-shadow: 0 0 5px #0f0;
+            animation: blink 0.2s infinite alternate;
+        }
+
+        @keyframes blink {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+
+        .data-stream {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--accent-color), transparent);
+            opacity: 0.5;
+            animation: dataFlow 2s linear infinite;
+        }
+
+        @keyframes dataFlow {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
         /* Mobile Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
@@ -212,8 +287,32 @@
                 <p>In a market defined by microseconds, proximity is power. Apex Pro Group (APG) is pioneering "Localized HPC Nodes"—proprietary hardware units that bring institutional-grade data processing to the residential edge.</p>
                 <p>By moving the computation closer to the user, we reduce latency, enhance execution precision, and empower the next generation of algorithmic trading strategies.</p>
             </div>
-            <div style="background: #1a1c25; height: 300px; display: flex; align-items: center; justify-content: center; border: 1px solid #333;">
-                <span style="color: #444; font-size: 1.5rem;">[Server Rack / Node Visual]</span>
+            <div class="server-visual">
+                <div class="server-rack">
+                    <!-- Generating server units via JS or just static HTML for speed -->
+                    <script>
+                        for(let i=0; i<12; i++) {
+                            document.write(`<div class="server-unit">
+                                <div class="server-light active" style="animation-delay: ${Math.random()}s"></div>
+                                <div class="server-light ${Math.random() > 0.7 ? 'processing' : ''}" style="animation-delay: ${Math.random()}s"></div>
+                                <div class="server-light" style="margin-left: auto; background: #555;"></div>
+                            </div>`);
+                        }
+                    </script>
+                    <div style="height: 20px;"></div>
+                    <script>
+                         for(let i=0; i<12; i++) {
+                            document.write(`<div class="server-unit">
+                                <div class="server-light active" style="animation-delay: ${Math.random()}s"></div>
+                                <div class="server-light ${Math.random() > 0.5 ? 'processing' : ''}" style="animation-delay: ${Math.random()}s"></div>
+                                <div class="server-light" style="margin-left: auto; background: #555;"></div>
+                            </div>`);
+                        }
+                    </script>
+                </div>
+                <div class="data-stream" style="left: 20%; animation-duration: 3s;"></div>
+                <div class="data-stream" style="left: 50%; animation-duration: 2.5s; animation-delay: 1s;"></div>
+                <div class="data-stream" style="left: 80%; animation-duration: 4s; animation-delay: 0.5s;"></div>
             </div>
         </div>
     </section>
