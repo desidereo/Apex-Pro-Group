@@ -42,14 +42,23 @@ Data is often split between **Orders** (one-time) and **Subscriptions** (recurri
      - Find your "TradingView ID" field.
      - Look for the **"Name"** column (e.g., `billing_tradingview_id` or `tradingview_id`). **Copy this name.**
    
-   - **Step 3b: Export**
-     - Go back to **WooCommerce > Export Orders**.
-     - You should be on the **"Export Now"** tab.
-     - **Crucial Step:** Scroll down to the **"Set up fields to export"** section.
-       - On the right side, verify you are looking at the "Billing Address" or "Custom Fields" section.
-       - **Drag the field** that matches the name you found in Step 3a (e.g., `billing_tradingview_id`) into the list on the left.
-       - **Tip:** Click the **"Preview"** button to ensure you see data in that column!
-     - Click **Export** and save as `orders.csv`.
+   - **Step 3b: TROUBLESHOOTING (If it's missing from the CSV)**
+      - The field name might be hidden or slightly different (e.g., starting with an underscore `_`).
+      - **Find the REAL Database Name:**
+        1. Go to **WooCommerce > Orders** and open an order that *definitely* has a TradingView ID.
+        2. Click **Screen Options** (top right corner) -> Check the box for **"Custom Fields"**.
+        3. Scroll to the very bottom of the order page.
+        4. Look for the TradingView ID in the "Value" column.
+        5. The text in the **"Name"** column next to it is the *Key* you need (e.g., `_billing_tradingview_id`).
+      - **Check "Order Item" Data:**
+        - Sometimes the ID is attached to the *product*, not the order.
+        - In the Export plugin, look for the **"Order Items"** section (instead of "Billing").
+        - Drag **"Item Metadata"** or **"Item Custom Fields"** into your export list.
+
+    - **Step 3c: Export**
+      - Go back to **WooCommerce > Export Orders**.
+      - Drag the field with the *exact name* you found in the Troubleshooting step.
+      - Click **Export**.
 
 3. **Export 2: Subscriptions (Recurring Payments)**
    - **Check the "Post Type" Dropdown:** At the very top of the "Export Now" tab, look for a dropdown labeled "Post Type" (it usually says "Orders" by default).
