@@ -121,22 +121,41 @@ I have created a script called `extract_from_xml.py` that reads this backup file
 
 ---
 
-## 4. Automating the Content Migration
+## 5. The Point of No Return: Deleting & Switching
 
-I have created a script called `import_products.py` in this folder.
+**STOP!** Before you delete anything:
+1.  **Move your XML file** into the `Legacy_Backup` folder.
+2.  **Run** `python extract_from_xml.py`.
+3.  **Open** the generated CSV and check if the "TradingView ID" column has data.
+4.  **If yes:** You are safe. Proceed below.
 
-**How it works:**
-If you place your exported `products.csv` into the `Legacy_Backup` folder, running this script will:
-1. Read your old product names, descriptions, and prices.
-2. Automatically update `tradingview.html` and `mql5.html` with your real content.
-3. This saves you from manually copying and pasting text for every product!
+### A. Uninstall WordPress (The Clean Sweep)
+1.  Log in to **cPanel** (via Namecheap).
+2.  Go to **WordPress Manager by Softaculous**.
+3.  Find your `g-labs.software` installation.
+4.  Click the **Down Arrow** (or "Uninstall" trash can icon).
+5.  **Check the box** to "Remove Directory", "Remove Database", "Remove Database User".
+6.  Click **Remove Installation**.
+7.  *Your site is now gone.*
 
-**To run it:**
-1. Ensure `products.csv` is in `Websites/G_Labs/Legacy_Backup/`.
-2. Open a terminal in `Websites/G_Labs/`.
-3. Run: `python import_products.py`
+### B. Upload the New Site
+1.  **Prepare your files:**
+    - On your computer, go to `Websites/G_Labs/`.
+    - Select: `index.html`, `mql5.html`, `tradingview.html`, `privacy.html`, `assets`, and `css`.
+    - **Right-click > Send to > Compressed (zipped) folder**. Name it `upload.zip`.
 
----
+2.  **Upload to Server:**
+    - In cPanel, go to **File Manager**.
+    - Open the `public_html` folder (or the specific folder for `g-labs.software`).
+    - Click **Upload** (top bar).
+    - Drag your `upload.zip` in.
+    - Go back to File Manager.
+    - **Right-click `upload.zip` > Extract**.
+    - (Optional) Delete the zip file.
+
+3.  **Go Live:**
+    - Visit `www.g-labs.software`.
+    - You should see your new site immediately!
 
 ## 4. Switching the Domain (Go Live)
 
