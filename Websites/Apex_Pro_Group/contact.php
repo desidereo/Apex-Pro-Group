@@ -3,13 +3,38 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // 1. Sanitize Inputs (Remove harmful characters)
+    // 1. Honeypot Check (Anti-Spam)
+    // If the hidden 'website_url' field is filled, it's a bot.
+    if (!empty($_POST["website_url"])) {
+        die("System error. Please try again later."); 
+    }
+
+    // 2. Sanitize Inputs (Remove harmful characters)
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $subject = strip_tags(trim($_POST["subject"]));
     $message = trim($_POST["message"]);
 
-    // 2. Validate Inputs
+    // 3. Spam Keyword Filter
+    $spam_keywords = [
+        'seo service', 'web design', 'rank your website', 
+        'improve your ranking', 'marketing proposal', 
+        'viagra', 'casino', 'lottery', 'cryptocurrency investment scheme',
+        'passive income from home', 'make money online'
+    ];
+    
+    foreach ($spam_keywords as $keyword) {
+        if (stripos($message, $keyword) !== false) {
+            die("System error. Please try again later.");
+        }
+    }
+
+    // 4. Link Count Check (More than 3 links is usually spam)
+    if (substr_count($message, 'http') > 3 || substr_count($message, 'www.') > 3) {
+         die("System error. Please try again later.");
+    }
+
+    // 5. Validate Inputs
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Redirect back with error (or handle via AJAX)
         header("Location: index.html?status=error");

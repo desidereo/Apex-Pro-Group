@@ -620,6 +620,12 @@
             
             <div id="status-box" class="status-message"></div>
             <form action="contact.php" method="POST" class="contact-form">
+                <!-- Honeypot Anti-Spam (Hidden from humans) -->
+                <div style="position: absolute; left: -9999px;">
+                    <label for="website_url">Website</label>
+                    <input type="text" id="website_url" name="website_url" autocomplete="off" tabindex="-1">
+                </div>
+
                 <div class="form-group">
                     <label for="name">FULL NAME</label>
                     <input type="text" id="name" name="name" class="form-control" required>
